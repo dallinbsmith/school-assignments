@@ -1,0 +1,31 @@
+body {
+    background-color: azure;
+}
+
+p {
+    font-family: verdana;
+    font-size: 10px;
+    
+    
+}
+
+h1 {
+    color: crimson
+    
+}
+
+img {
+    padding: 35px;
+    text-align: center;
+}
+
+a {
+    font-size: 25px;
+    
+}
+p.paragraphfun {
+    text-align: center;
+    color: darkslateblue;
+    font-size: 27px;
+    
+}

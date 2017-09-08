@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font: Bookman Old Style;
+    font-size: 42px;
+    font-weight: bold;
+    color:floralwhite;
+}
+h4 {
+    text-align: center;
+    font: Garamond;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -10px;
+    color:floralwhite;
+}
+.date {
+    text-align: center;
+    font: Garamond;
+    font-size: 12px;
+}
+hr {
+    color: aquamarine;
+}
+.header {
+    background-color: black;
+    padding: 2px;
+}
+
+.columns {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.biebs {
+    background-color: azure;
+}
+
+img {
+    height: 250px;
+    float: left;
+    padding: 10px;
+}
+span {
+    color: firebrick;
+    text-decoration: underline;
+}

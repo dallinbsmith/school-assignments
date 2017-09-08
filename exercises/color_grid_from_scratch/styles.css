@@ -1,0 +1,75 @@
+.parent {
+    height:100px;
+    width: 530px;
+    background-color: #F5C6D6;
+    margin: auto;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+}
+
+.child {
+    height:100px;
+    width: 125px;
+    background-color: #EE2E84;
+    display: inline-block;
+    margin: auto;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+}
+
+.child-parent {
+    margin: auto;
+    text-align: center;
+    display:block;
+    
+}
+
+.teenager-parent {
+    margin: auto;
+    text-align: center;
+    display:block;
+    
+    
+}
+.teenager {
+    height:100px;
+    width: 260px;
+    background-color: #85CFD8;
+    display: inline-block;
+    margin: auto;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+    
+}
+.other-parent {
+    margin: auto;
+    text-align: center;
+    display:block;
+    
+    
+}
+.young-adult {
+    height:100px;
+    width: 400px;
+    background-color: #8DC63F;
+    display: inline-block;
+    position: relative;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+}
+
+.toddler {
+    height:100px;
+    width: 125px;
+    background-color: #E76E34;
+    display: inline-block;
+    position: relative;
+    right: 2px;
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+}
