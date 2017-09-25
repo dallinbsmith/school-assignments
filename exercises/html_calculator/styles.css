@@ -1,0 +1,136 @@
+.box {
+    width: 16%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-family: "Helvetica";
+    font-size: 28px;
+    text-decoration-color: #f4f1ee;
+    text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+    position: relative;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204, 198, 197, .5);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.answer{
+    top: -50px;
+    left: 52%;
+    
+}
+
+.addition {
+    top: 40px;
+    left: 12%;
+}
+
+.subtraction {
+    top: 40px;
+    left: 12%;
+}
+
+.multiplication {
+    top: 40px;
+    left: 12%;
+}
+
+
+html,body {
+    min-height: 100%;
+}
+
+body {
+    background-image: -webkit-linear-gradient(top, #edecec, #cecbc9);
+    background-image: linear-gradient(top, #edecec, #cecbc9);
+}
+
+.buttonHolder {
+    margin: 80px auto;
+    width: 400px;
+}
+
+.button {
+    background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+    background-image: linear-gradient(top, #f4f1ee, #fff);
+    border-radius: 50%;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204, 198, 197, .5);
+    left: 50%;
+    top: -30px;
+    height: 70px;
+    margin: 0 30px 30px 0;
+    position: relative;
+    width: 70px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.button:after {
+    color: #e9e6e4;
+    content: "";
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+    position: absolute;
+    width: 30px;
+}
+
+.subtract:after {
+    content: "-";
+    left: 19px;
+    top: 12px;
+}
+
+.add:after {
+    content: "+";
+    left: 19px;
+    top: 12px;
+}
+
+.multiply:after {
+    content: "✖";
+    left: 19px;
+    top: 15px;
+}
+
+.clear:after {
+    content: "C";
+    left: 19px;
+    top: 15px;
+}
+
+
+.button:hover {
+    background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+    background-image: linear-gradient(top, #fff, #f4f1ee);
+    color: #0088cc;
+}
+
+
+.tick:hover:after {
+    color: #83d244;
+    text-shadow: 0px 0px 6px #83d244;
+}
+
+.cross:hover:after {
+    color: #eb2f2f;
+    text-shadow: 0px 0px 6px #eb2f2f;
+}
+
+.button:active {
+    background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+    background-image: linear-gradient(top, #efedec, #f7f4f4);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4), inset 0px -3px 1px 1px rgba(204, 198, 197, .5);
+}
+
+.button:active:after {
+    color: #dbd2d2;
+    text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+}
+
+.clearbutton {
+    position: relative;
+    left:400px;
+}

@@ -1,0 +1,502 @@
+body {
+    background-size: 2900px;
+}
+
+.parentcontainer {
+    width: 110%;
+    margin: 0vw;
+}
+
+.header {
+    padding-top: 20px;
+    height: 27px;
+    background-color: #224548;
+    width: 120vw;
+    margin-right: -5%;
+    position: absolute;
+    display: block;
+}
+
+.mainbar {
+    height: 1000px;
+    width: 120%;
+    top: 310px;
+    left: -5%;
+    right: -5%;
+    background-color: white;
+    position: absolute;
+    display: block;
+}
+
+.banner {
+    height: 300px;
+    margin-top: 15px;
+    width: 100vw;
+    left: -5%;
+    display: block;
+    position: absolute;
+    
+}
+
+.white-difficult-mobile{
+    visibility: hidden;
+}
+
+img {
+    position: relative;
+    width: 120%;
+    left: -5%;
+}
+
+.row {
+    width: 100vw;
+}
+
+.sidebar {
+    height: 2950px;
+    width: 33vw;
+    right: 0px;
+    position: absolute;
+    background-color: rgba(134, 173, 146, 0.4);
+    z-index: 6;
+}
+
+.side-text {
+    height: 60px;
+    width: 120%;
+    top: 110px;
+    background-color: rgba(255, 255, 255, 0.4);
+    ;
+    left: 4.5em;
+    position: absolute;
+    display: inline-block;
+    z-index: 3;
+}
+
+.side-text-button {
+    height: 60px;
+    width: 70px;
+    float: right;
+    top: 0px;
+    right: -1px;
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-style: solid;
+    border-color: #86ad92;
+    border-left-color: rgba(0, 0, 0, 0.4);
+    border-width: thin;
+    z-index: 4;
+    margin-left: 15%;
+}
+
+.side-text-content {
+    height: 750px;
+    width: 100%;
+    top: 370px;
+    position: relative;
+    z-index: 2;
+    margin-left: 15%;
+}
+
+.overlay-bar {
+    height: 1275px;
+    width: 120%;
+    left: -1%;
+    background-color: #e5ede8;
+    position: fixed;
+    z-index: -3;
+}
+
+.connotation-bar {
+    height: 320px;
+    width: 120%;
+    left: -5%;
+    top: 2900px;
+    background-color: green;
+    position: absolute;
+}
+
+.footer {
+    height: 180px;
+    width: 120%;
+    left: -5%;
+    top: 3220px;
+    background-color: #114348;
+    position: absolute;
+}
+
+.enzo {
+    width: 125px;
+    float: left;
+    position: inline-block;
+}
+
+.title-script {
+    height: 125px;
+    width 30px;
+    left: 150px;
+    top: 80px;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+}
+
+h1 {
+    margin-top: 20px;
+    display: block;
+    width: 400px;
+    height: 100px;
+    padding-left: 150px;
+    color: white;
+    font-family: 'Julius Sans One';
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.titletext {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    content: "";
+    height: 2em;
+    padding-left: 30px;
+    margin: -20px 20px 0 0;
+    background: url(enso.svg);
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 1.5em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+}
+
+.white-difficult {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    height: 125px;
+    width 30px;
+    left: 60px;
+    top: 2px;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 1;
+}
+
+p {
+    color: black;
+    z-index: 144;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    opacity: .7;
+    padding: 15px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    position: relative;
+    font-size: 30px;
+    padding: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-left: 10vw;
+    color: black;
+    z-index: 10;
+    opacity: .7;
+}
+
+.bottom-copy-space {
+    height: 880px;
+    width: 120%;
+    top: 2070px;
+    left: -5%;
+    right: -5%;
+    background-color: white;
+    position: absolute;
+    z-index: 5;
+}
+
+.overlay-overlay-text {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+}
+
+.spacer {
+    height: 50px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.mid-overlay {}
+
+.koi {
+    position: absolute;
+    margin-bottom: 0px;
+    clip: rect(770px, 3000px, 2000px, 10px);
+    bottom: 0px;
+}
+
+.side-list-box {
+    height: 100px;
+    width: 130%;
+    position: relative;
+    left: -50px;
+    margin: 0;
+}
+
+.side-list-bar {
+    height: 1px;
+    width: 100%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.side-list-h5 {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    position: relative;
+    font-size: 20px;
+    padding: 15px;
+    width: 80%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #114348;
+    float: left;
+    left: -200px;
+    margin: auto;
+    margin-left: 10vw;
+    color: #114348;
+    z-index: 10;
+    opacity: .7;
+}
+
+.side-list-by {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    position: relative;
+    font-size: 17px;
+    width: 80%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #114348;
+    float: left;
+    top: -5px;
+    left: -185px;
+    margin: auto;
+    margin-left: 10vw;
+    color: black;
+    z-index: 10;
+    opacity: .2;
+    display: inline-block;
+}
+
+.side-list-h6 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: normal;
+    position: relative;
+    font-size: 15px;
+    width: 80%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #114348;
+    float: left;
+    left: -155px;
+    top: -22px;
+    margin: auto;
+    margin-left: 10vw;
+    color: black;
+    z-index: 10;
+    opacity: .5;
+    display: inline-block;
+}
+
+.bottom-connotation-text {
+    bottom: -50px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: normal;
+    position: relative;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    margin: auto;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.connotation-text-bar {
+    margin: auto;
+    width: 120%;
+    margin-top: 70px;
+}
+
+.connotation-text-bar-1 {
+    margin: auto;
+    width: 120%;
+    margin-top: -30px;
+}
+
+.bottom-span {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-style: italic;
+    opacity: .6;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1150px) {
+    .sidebar {
+        visibility: hidden;
+    }
+    .title-script {
+        margin: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -25%)
+    }
+    .banner {
+        height: 200px;
+        
+    }
+    .mainbar{
+        top: 230px;
+    }
+    .enzo{
+        width: 80px;
+        position: absolute;
+        left:50%;
+        transform:translateX(-280%);
+        top:-20px;
+    }
+    .titletext{
+    top: 75px;
+    width: 100%;
+    height: 1em;
+    left: 50%;
+        transform: translate(-20%, -50%);
+    color: white;
+    font-size: 1em;
+    opacity: 0.6;
+    }
+    .titlescript{
+        visibility:visible;
+    }
+    h1{
+        position: absolute;
+        left: 35%;
+        transform: translate(-50%, -20%);
+        font-size:2.3em;
+    }
+    .white-difficult-mobile{
+        visibility: visible;
+        position: absolute;
+        top: 200px;
+        height: 200px;
+        width: 100%;
+        color: blueviolet;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(http://fonts.gstatic.com/s/juliussansone/v5/iU65JP9acQHPDLkdalCF7pQnCV4ii-F0S-GDf6mWM7Q.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(http://fonts.gstatic.com/s/juliussansone/v5/iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(http://fonts.gstatic.com/s/librebaskerville/v4/QHIOz1iKF3bIEzRdDFaf5RObNE73mVYEPR_8pi-Us2X2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(http://fonts.gstatic.com/s/librebaskerville/v4/QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK56jerHLVJWaC-9Ja-RK4Ug.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK8j0T1k_tV7QYhgnOhA2764.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

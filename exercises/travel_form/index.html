@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Document</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Gimme that Personal Info!</h1>
+    <h4>We're going to take this stuff and sell it. So gimme gimme gimme</h4>
+    <p>First</p>
+    <input type="text" id = "fname">
+    <p>Last Name</p>
+    <input type="text" id = "lname">
+    <br>
+    <p>I'm this many:</p>
+    <input type="number" maxlength="3" name ="age">
+    <br>
+    <form>
+        <p>I'm boy!</p>
+        <input name="gender" type="radio" name = "boy"><br>
+        <p>I'm girl!</p>
+        <input name="gender" type="radio" name = "girl"><br>
+        <p>I'm a something else!</p>
+        <input name="gender" type="radio" name = "othergender"><br>
+    </form>
+    <br>
+    <form>
+        <div>
+            <p>Going to Europe!</p>
+            <input name="location" type="checkbox" name = "location_europe"><br>
+        </div>
+        <div>
+            <p>Going to Africa!</p>
+            <input name="location" type="checkbox" name = "location_africa"><br>
+        </div>
+        <div>
+            <p>Going to Asia!</p>
+            <input name="location" type="checkbox" name = "location_asia"><br>
+        </div>
+    </form>
+    <br>
+    <form>
+        <div>
+            <p>Not an Animal Eater</p>
+            <input name="dietRestrictions" type="checkbox" name = "dietary_vegetarian">
+        </div>
+        <div>
+            <p>Not an Cow Stuff Eater</p>
+            <input name="dietRestrictions" type="checkbox" name = "dietary_milk">
+        </div>
+        <div>
+            <p>Not a other stuff Eater</p>
+            <input name="dietRestrictions" type="checkbox" name = "dietary_allergic">
+        </div>
+    </form>
+
+<button id="submission" onclick = "pleaseWork()">Submit</button>
+
+<div id="myModal" class="modal">
+ 
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id = "modalcontent"></p>
+    <br>
+     <p id = "firstnamesect"></p>
+     <br>
+     <p id = "lastnamesect"></p>
+  </div>
+
+</div>
+<script src ="travel.js"></script>
+</body>
+
+</html>

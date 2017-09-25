@@ -1,0 +1,184 @@
+.box1 {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.box1:hover {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:limegreen;
+    border-style: dashed;
+    border-color: cyan;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.box2{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.box2:hover{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 10px 10px 5px #888888;
+    background-color:darkviolet;
+    display: inline-block;
+    opacity: .6;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.box3:hover {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color: red;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.box4{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.box4:hover{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:hotpink;
+    display: inline-block;
+    animation-name: slideOutRight;
+     animation-duration: 1s;
+    
+}
+.box5{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.box5:hover {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:tomato;
+    display: inline-block;
+    animation-name:rollOut;
+    animation-duration: 1s;
+    border-radius: 3px;
+    
+}
+
+.box6{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkblue;
+    display: inline-block;
+}
+
+.box6:hover{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color:darkcyan;
+    display: inline-block;
+    animation-name: jackInTheBox;
+    animation-duration: 1s;
+}
+
+.container{
+    position: relative;
+    width: 630px;
+    top: 200px;
+
+    margin:auto;
+}
+
+
+@-webkit-keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.slideOutRight {
+  animation-name: slideOutRight;
+}
+
+
+@keyframes rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+.rollOut {
+  animation-name: rollOut;
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  animation-name: jackInTheBox;
+}

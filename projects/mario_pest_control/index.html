@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div>
+        <img class="cloud1" src="mario_pics/mario_cloud.png">
+        <img class="cloud2" src="mario_pics/mario_cloud.png">
+        <div class="header_parent">
+            <img class="header_coin" src="mario_pics/mario_coin.png">
+            <img id="mario_head" class="mario_head" src="mario_pics/mario_head_pic.png">
+            <h2 class="title">MARIO'S PEST CONTROL</h2>
+        </div>
+    </div>
+    <div>
+        <h3 class="pricing">PRICING</h3>
+        <div class="centered">
+            <img class="creaturepic" src="mario_pics/goomba_pic.png">
+            <img class="creaturepic1" src="mario_pics/bobomb_pic.png">
+            <img class="creaturepic1" src="mario_pics/cheepcheep_pic.png">
+        </div>
+        <div class="centered">
+            <img class="coinpic" src="mario_pics/coin_count_1.png">
+            <img class="coinpic" src="mario_pics/coin_count_2.png">
+            <img class="coinpic" src="mario_pics/coin_count_3.png">
+        </div>
+        <div class="caught_div">
+            <h4 class="caught">TOTAL CAUGHT</h4>
+            <h4 class="caught">TOTAL CAUGHT</h4>
+            <h4 class="caught">TOTAL CAUGHT</h4>
+        </div>
+        <div class="total_div">
+            <span><input class="inputbox" type="number" id="goomba"></span>
+            <span><input class="inputbox" type="number" id="bobombs"></span>
+            <span><input class="inputbox" type="number" id="cheepcheep"></span>
+        </div>
+
+        <div>
+            <input class="calculate" type="image" src="mario_pics/calculate_button.png" onclick="handleClick();" />
+            <div>
+                <input class = "totalowed" type="number" id="amountdue">
+                <img class = "totalcoin" src="mario_pics/mario_coin.png">
+                <img class="totaldue" src="mario_pics/total_due.png">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <img class = "marioground" src = "mario_pics/mario_ground.png">
+        <div class = "mariofooter">
+            <h5 class = "footerscript">MARIO@MARIOWORLD.COM</h5>
+            <h5 class = "footerscript">MARIOWORLD.COM</h5>
+            <h5 class = "footerscript">123 PIPE DREAM LN, RAINBOW VILLAGE, MUSHROOM KINGDOM</h5>
+        </div>
+
+    </footer>
+    <script src="mario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+</head>
+
+<body>
+    <div>
+       <input class = "box addition" id = "firstadd" type = number>
+        <input class = "box addition" id = "secondadd" type = number><br>
+        <button class = "button add" onclick = "add();"></button>
+        <input class = "box answer" id = "answeradd" type = number>
+    </div>
+    <div>
+        <input class = "box subtraction" id = "firstsubtract" type = number>
+        <input class = "box subtraction" id = "secondsubtract" type = number><br>
+        <button class = "button subtract" onclick = "subtract()"></button>
+        <input class = "box answer" id = "answersubtract" type = number>
+    </div>
+    <div>
+        <input class = "box multiplication" id = "firstmultiply" type = number>
+        <input class = "box multiplication" id = "secondmultiply" type = number><br>
+        <button class = "button multiply" onclick = "multiply()"></button>
+        <input class = "box answer" id = "answermultiply" type = number>
+    </div>
+    
+    <div class = "clearbutton">
+        
+    <button class = "button clear" onclick = "clearthis()"></button>
+    </div>
+    <script src = "calculator.js"></script>
+</body>
+</html>

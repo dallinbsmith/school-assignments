@@ -1,0 +1,46 @@
+.parent {
+    border-color:white;
+    height:100px;
+    border-style: solid;
+    background-color: #F5C6D6;
+    border-width: thick;
+    height: 100px;
+}
+.child {
+    border-color:white;
+    height:100px;
+    border-style: solid;
+    background-color: #EE2E84;
+    border-width: thick;
+    height: 100px;
+}
+.teen {
+    border-color:white;
+    height:100px;
+    border-style: solid;
+    background-color: #85CFD8;
+    border-width: thick;
+    height: 100px;
+}
+.adolescent {
+    border-color:white;
+    height:100px;
+    border-style: solid;
+    background-color: #8DC63F;
+    border-width: thick;
+    height: 100px;
+}
+.toddler {
+    border-color:white;
+    height:100px;
+    border-style: solid;
+    background-color: #E76E34;
+    border-width: thick;
+    height: 100px;
+}
+
+.encompass {
+    width: 80vw;
+    margin: auto;
+    margin-top: 50px;
+}

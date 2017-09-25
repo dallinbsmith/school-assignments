@@ -1,0 +1,25 @@
+.djsquare {
+    height: 300px;
+     width: 25vw;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.body:hover .djsquare {
+    background-color: darkorange;
+
+}
+
+#djsquare:hover {
+    background-color:steelblue;
+}
+
+#djsquare:active {
+    background-color:firebrick;
+}
+
+#djsquare:focus{
+    background-color: lightyellow;
+}

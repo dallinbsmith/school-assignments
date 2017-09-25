@@ -1,0 +1,463 @@
+.france-flag {
+   height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    top: 10px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.france-white {
+     height: 100%;
+    width: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    background-color: white;
+}
+
+.france-blue {
+    height: 100%;
+    width: 34%;
+    top: -100%;
+    position: relative;
+    background-color: blue;
+
+}
+
+
+.germany-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    top: 20px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.germany-red {
+    height: 33%;
+    width: 100%;
+    position: relative;
+    top: 33%;
+    background-color: red;
+}
+
+
+.germany-yellow {
+    height: 33%;
+    width: 100%;
+    position: relative;
+    top: 33%;
+    background-color: yellow;
+}
+
+
+.madagasgar-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    top: 30px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.madagasgar-right {
+    height: 100%;
+    width: 100%;
+    /*    position: absolute;*/
+}
+
+.madagasgar-white {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+}
+
+.madagasgar-red {
+    height: 50%;
+    width: 100%;
+    background-color: red;
+    /*
+    position: absolute;
+    display: inline-block;
+*/
+}
+
+.madagasgar-green {
+    height: 50%;
+    background-color: green;
+    /*
+    position: absolute;
+    display: block;
+*/
+}
+
+.swiss-flag {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    top: 40px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.swiss-cross {
+    height: 60%;
+    width: 60%;
+    background-color: red;
+    position: absolute;
+    top: 20%;
+    right: 20%
+    /*    position: absolute;*/
+}
+
+.swiss-horizontal {
+    height: 100%;
+    width: 27%;
+    background-color: white;
+    right: 36%;
+    display: inline-block;
+    position: absolute;
+}
+
+.swiss-vertical {
+    height: 30%;
+    width: 90%;
+    right: 5%;
+    top: 35%;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+}
+
+.swede-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    background-color: blue;
+    top: 50px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.swede-horizontal {
+    height: 100%;
+    width: 15%;
+    background-color: gold;
+    right: 57%;
+    display: inline-block;
+    position: absolute;
+}
+
+.swede-vertical {
+    height: 20%;
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    display: inline-block;
+    background-color: gold;
+}
+
+.gambia-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    top: 60px;
+    left: 33%;
+    font-size: 0px;
+}
+
+
+.gambia-center {
+    height: 30%;
+    width: 100%;
+    top: 33%;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+.gambia-blue {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    background-color: blue;
+}
+.gambia-green {
+    height: 50%;
+    width: 100%;
+    top: 20%;
+    position: relative;
+    background-color: darkgreen;
+    z-index: 0;
+}
+
+.tonga-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: firebrick;
+    border-style: solid;
+    border-color: black;
+    top: 70px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.tonga-white {
+    height: 50%;
+    width: 40%;
+    top: 0%;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+
+.tonga-cross {
+    height: 50%;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: white;
+    z-index: 2;
+}
+
+
+.tonga-horizontal {
+    height: 35%;
+    width: 100%;
+    top: 35%;
+    transform: translateX(-50%, -50%);
+    position: relative;
+    background-color: firebrick;
+}
+.tonga-vertical {
+    height: 100%;
+    width: 30%;
+    left: 37%;
+    top: -35%;
+    transform: translateX(-0%, -50%);
+    position: relative;
+    background-color: firebrick;
+}
+
+.japan-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    top: 80px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.japan-circle {
+    border-radius: 50%;
+    width: 40%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: firebrick;
+    z-index: 1;
+}
+
+.greece-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: mediumblue;
+    border-style: solid;
+    border-color: black;
+    top: 90px;
+    left: 33%;
+    font-size: 0px;
+}
+
+.greece-field {
+    height: 50%;
+    width: 40%;
+    top: 0%;
+    position: relative;
+    background-color: mediumblue;
+    z-index: 1;
+}
+
+
+.greece-cross {
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: mediumblue;
+    z-index: 2;
+}
+
+
+.greece-horizontal {
+    height: 20%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: white;
+}
+.greece-vertical {
+    height: 100%;
+    width: 20%;
+    left: 40%;
+    top: -20%;
+    position: relative;
+    background-color: white;
+}
+.greece-stripe1 {
+    height: 11%;
+    width: 100%;
+    top: 30%;
+    position: relative;
+    background-color: white;
+}
+
+.greece-stripe2 {
+    height: 11%;
+    width: 100%;
+    top: -10.5%;
+    transform: translateY();
+    position: relative;
+    background-color: white;
+}
+.greece-stripe3 {
+    height: 11%;
+    width: 100%;
+    top: -42%;
+    transform: translateY();
+    position: relative;
+    background-color: white;
+}
+.greece-stripe4 {
+    height: 11%;
+    width: 100%;
+    top: -74%;
+    transform: translateY();
+    position: relative;
+    background-color: white;
+}
+
+
+.niger-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: orangered;
+    border-style: solid;
+    border-color: black;
+    top: 100px;
+    left: 33%;
+    font-size: 0px;
+}
+
+
+.niger-white {
+    height: 35%;
+    width: 100%;
+    top: 32%;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+.niger-circle {
+    border-radius: 50%;
+    width: 20%;
+    height: 29%;
+    left: 50%;
+    top: -19%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: orangered;
+    z-index: 1;
+}
+.niger-green {
+    height: 33%;
+    width: 100%;
+    bottom: -32%;
+    position: relative;
+    background-color: limegreen;
+    z-index: 1;
+}
+
+.maldives-flag {
+    height: 210px;
+    width: 300px;
+    position: relative;
+    background-color: darkred;
+    border-style: solid;
+    border-color: black;
+    top: 110px;
+    left: 33%;
+    font-size: 0px;
+}
+
+
+.maldives-green {
+    height: 50%;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    background-color: darkgreen;
+    z-index: 1;
+}
+
+.maldives-whitemoon {
+    border-radius: 50%;
+    width: 23%;
+    height: 32%;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+.maldives-greenmoon {
+    border-radius: 50%;
+    width: 23%;
+    height: 32%;
+    left: 55%;
+    top: -32%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    background-color: darkgreen;
+    z-index: 2;
+}
