@@ -37,9 +37,9 @@ var input = readlineSync.question("Put in a dumb phrase so I can count the lette
 //comparison(input, otherArray);
 //console.log(answerArray);
 //console.log(objAnswer);
-
+//
 //var inputArray = [];
-var splitput = input.split("");
+//var splitput = input.split("");
 //
 //var answer = splitput.forEach(function (letter) {
 //if (splitput[letter] === undefined) {
@@ -48,14 +48,27 @@ var splitput = input.split("");
 //    splitput[letter]++;
 //}
 //});
-
-
-
-var answer = splitput.reduce(function(runningTotal, letter){
-      splitput[letter] ;
+//
+//
+//
+//var answer = splitput.reduce(function(runningTotal, letter){
+//      splitput[letter] ;
 //    }else{
 //        runningTotal.letter++;
 //    }
-},{});
+//},{});
+//
+//console.log(answer);
+
+var splitput = input.split("");
+
+var answer = splitput.reduce(function(runningtotal, obj){ 
+        if (runningtotal.obj === undefined){
+             runningtotal.obj = 1;
+        }else{
+            return runningtotal.obj++;
+        } 
+},{})
+
 
 console.log(answer);

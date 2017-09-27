@@ -1,0 +1,18 @@
+.table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+}
+
+.row{
+     width: 100%;
+    height: auto;
+    margin-left: auto;
+    
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

@@ -16,44 +16,44 @@
     <input type="text" id = "lname">
     <br>
     <p>I'm this many:</p>
-    <input type="number" maxlength="3" name ="age">
+    <input type="number" maxlength="3" id ="age">
     <br>
-    <form>
+    <form name ="genderform">
         <p>I'm boy!</p>
-        <input name="gender" type="radio" name = "boy"><br>
+        <input value="male" type="radio" id = "male" name = "gender"><br>
         <p>I'm girl!</p>
-        <input name="gender" type="radio" name = "girl"><br>
+        <input value="female" type="radio" id = "female" name = "gender"><br>
         <p>I'm a something else!</p>
-        <input name="gender" type="radio" name = "othergender"><br>
+        <input value="other" type="radio" id = "othergender" name = "gender"><br>
     </form>
     <br>
-    <form>
+    <form name = "locationform">
         <div>
             <p>Going to Europe!</p>
-            <input name="location" type="checkbox" name = "location_europe"><br>
+            <input value = "Europe" type="checkbox" name = "locationbox"><br>
         </div>
         <div>
             <p>Going to Africa!</p>
-            <input name="location" type="checkbox" name = "location_africa"><br>
+            <input value ="Africa" type="checkbox" name = "locationbox"><br>
         </div>
         <div>
             <p>Going to Asia!</p>
-            <input name="location" type="checkbox" name = "location_asia"><br>
+            <input value ="Asia" type="checkbox" name = "locationbox"><br>
         </div>
     </form>
     <br>
-    <form>
+    <form name = "dietaryform">
         <div>
             <p>Not an Animal Eater</p>
-            <input name="dietRestrictions" type="checkbox" name = "dietary_vegetarian">
+            <input name="dietRestrictions" type="checkbox" value = "Won't Eat Animals">
         </div>
         <div>
             <p>Not an Cow Stuff Eater</p>
-            <input name="dietRestrictions" type="checkbox" name = "dietary_milk">
+            <input name="dietRestrictions" type="checkbox" value = "Doesn't like Cow Juice">
         </div>
         <div>
             <p>Not a other stuff Eater</p>
-            <input name="dietRestrictions" type="checkbox" name = "dietary_allergic">
+            <input name="dietRestrictions" type="checkbox" value = "Is Allergic to Stuff">
         </div>
     </form>
 
@@ -66,8 +66,14 @@
     <p id = "modalcontent"></p>
     <br>
      <p id = "firstnamesect"></p>
-     <br>
      <p id = "lastnamesect"></p>
+     <br>
+     <p id = "agesect"></p>
+     <p id = "gendersect"></p>
+     <br>
+     <p id = "locationsect"></p>
+     <br>
+      <p id = "dietarysect"></p>
   </div>
 
 </div>

@@ -169,3 +169,47 @@ console.log(carTotals);
 //        numberOfFords: 0});
 //
 //console.log(runningTotalofCars);
+
+
+//var answer = cars.reduce(function (runningTotals, currentCar) {
+//            if (currentCar.model === "chevy") {
+//                if (runningTotals.numberOfChevys === undefined) {
+//                    runningTotals.numberOfChevys = 1;
+//                } else {
+//                    runningTotals.numberOfChevys++;
+//                }
+//            }
+//            if (currentCar.model === "ford") {
+//                if (runningTotals.numberOfFords === undefined) {
+//                    runningTotals.numberOfFords = 1;
+//                } else {
+//                    runningTotals.numberOfFords++;
+//                }
+//
+//
+//
+//            }
+//}, {});
+
+
+var answer = cars.reduce(function (runningTotals, currentCar) {
+        if (currentCar.model === "chevy") {
+            if (runningTotals.numberOfChevys === 0) {
+                return runningTotals.numberOfChevys = 1;
+            } else {
+                return runningTotals.numberOfChevys++;
+            }
+        } else if (currentCar.model === "ford") {
+            if (runningTotals.numberOfFords === 0) {
+                return runningTotals.numberOfFords = 1;
+            } else {
+                return runningTotals.numberOfFords++;
+            }
+        }
+    }, {
+        numberOfChevys: 0,
+        numberOfFords: 0
+    } 
+    );
+
+console.log(answer);
