@@ -1,14 +1,48 @@
-//var xhr = new XMLHttpRequest();
-//xhr.open
-//
-//
-//xhr.onreadystatechange = function ()
-//if (xhr.readyState === 4 && xhr.status === 200){
-//    var jsonData = xhr.responseText;
-//    var data = JSON. parse(jsonData);
-//    var name = data.name;
-//    document.getElementById
-//}
+var xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function () {  
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        var jsonData = xhr.responseText;
+        var data = JSON.parse(jsonData);
+        var name = data.objects[0].pokemon[2].name;
+        var listnames = data.objects[0].pokemon.map(function(obj){
+                                                   return "<p> " + obj.name + "</p>"});
+//        document.getElementById("name").innerHTML = "JSON results: " + jsonData;
+        document.getElementById("name2").innerHTML = listnames.join("");
+    }
+};
+
+xhr.open("GET","http://api.vschool.io:6543/pokemon.json" , true);  
+xhr.send();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -27,9 +61,9 @@
 //    }
 //};
 //
-//xhr.open("GET", "http://swapi.co/api/people/1/", true);  
+//xhr.open("GET", "https://swapi.co/api/people/1/", true);  
 //xhr.send();
-//
+
 //
 //
 //

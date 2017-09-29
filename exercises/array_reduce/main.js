@@ -34,6 +34,16 @@
 //    {name: 'Zack', age: 19, voted: false}
 //];
 //
+//
+//var answer  = voters.reduce(function(runningtotal, obj){
+//         if (obj.voted === true){
+//                            return runningtotal + obj.voted;
+//}   
+//    return runningtotal;
+//}, 0);
+//
+//console.log(answer);
+
 
 //works but isn't right
 
@@ -45,6 +55,10 @@
 //        },0);
 //
 //console.log(answer);
+
+
+
+
 
 
 // ********WORKS***********
@@ -86,6 +100,12 @@
 //    { title: "A second Tesla Model S", price: 90000 }
 //];
 //
+//var answer = wishlist.reduce(function(runningPrice, obj){
+//    return runningPrice + obj.price;
+//},0);
+//
+//console.log(answer);
+
 //
 //var answer = wishlist.reduce(function(runningPriceTotal, currentObj){
 //   return runningPriceTotal + currentObj.price;
@@ -93,6 +113,23 @@
 //
 //
 //console.log(answer);
+
+
+//var arrays = [  
+//    ["1", "2", "3"],
+//    [true],
+//    [4, 5, 6]
+//];
+//
+//
+//var answer = arrays.reduce(function(flattened, arr){
+//    return flattened.concat(arr);
+//    
+//},[]);
+//
+//
+//console.log(answer);
+//
 
 
 
@@ -117,11 +154,6 @@
 
 
 
-
-
-//DIDN'T FINISH THIS ONE
-
-//
 //var voters = [  
 //    {name:'Bob' , age: 30, voted: true},
 //    {name:'Jake' , age: 32, voted: true},
@@ -137,6 +169,38 @@
 //    {name: 'Zack', age: 19, voted: false}
 //];
 //
+//var answer = voters.reduce(function(runningTotal, obj){
+//    if (obj.age >= 18 && obj.age <= 25){
+//        ++runningTotal.youth;
+//        if (obj.voted === true){
+//            ++runningTotal.youngVotes;
+//        } 
+//    }else if (obj.age >= 26 && obj.age <= 35){
+//        ++runningTotal.mids;
+//        if (obj.voted === true){
+//            ++runningTotal.midVotes;
+//        } 
+//    }
+//        else if (obj.age >= 36 && obj.age <= 55){
+//        ++runningTotal.olds;
+//        if (obj.voted === true){
+//            ++runningTotal.oldVotes;
+//        }
+//    }
+//    return runningTotal;
+//},{youngVotes: 0,
+//        youth:0,
+//        midVotes:0,
+//        mids:0, 
+//        oldVotes: 0,
+//        olds: 0});
+
+
+
+//console.log(answer);
+
+
+
 //function voterResults(arr) {
 //    var obj = {
 //        youngVotes: 0,
@@ -154,12 +218,7 @@
 //            }
 //            
 //        }else if (currVoter.age >= 26 && currVoter.age )
-//        
-//    })    
-//        
-//    
+//    })       
 //}
-//
-//
 //
 //var answer 

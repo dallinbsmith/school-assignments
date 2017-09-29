@@ -1,0 +1,77 @@
+{
+    "menu": [
+            [appetizers, [{
+                "food": "nachos",
+                "ingredients": "chips and cheese",
+                "serves": "2-4"
+                }, {
+                "food": "moz sticks",
+                "ingredients": "cheese and breadcrumbs",
+                "serves": "1"
+                }, {
+                "food": "ultra nachos",
+                "ingredients": "chips and ultra chees",
+                "serves": "1"
+                }, {
+                "food": "avocado dippers",
+                "ingredients": "avocado whipped cheese topping",
+                "serves": "12"
+                }, {
+                "food": "peanuts",
+                "ingredients": "peanuts",
+                "serves": "50 - 60"
+                }
+
+                ]],
+                [drinks, [{
+                "food": "sprite",
+                "ingredients": "sugar water",
+                "serves": "1"
+                    }, {
+                "food": "coke",
+                "ingredients": "sugar water",
+                "serves": "1"
+                    }, {
+                "food": "pepsi",
+                "ingredients": "sugar water",
+                "serves": "1"
+                    }, {
+                "food": "dr pepper",
+                "ingredients": "sugar water",
+                "serves": "1"
+                    }, {
+                "food": "horchata",
+                "ingredients": "sugar water",
+                "serves": "1"
+                    }
+
+
+
+                    ]],
+             [entrees, [{
+                "food": "soup",
+                "ingredients": "mostly water",
+                "serves": "many"
+                    }, {
+                "food": "tacos",
+                "ingredients": "cheese and meat and taco",
+                "serves": "1-2"
+                    }, {
+                "food": "lasagne",
+                "ingredients": "you dont want to know",
+                "serves": "1-2"
+                    }, {
+                "food": "churros",
+                "ingredients": "churro powder",
+                "serves": "1-2"
+                    }, {
+                "food": "steak",
+                "ingredients": "cow",
+                "serves": "5 and a half"
+                    }
+
+
+
+                    ]],
+        ]
+}

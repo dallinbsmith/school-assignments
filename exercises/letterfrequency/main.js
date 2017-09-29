@@ -60,15 +60,20 @@ var input = readlineSync.question("Put in a dumb phrase so I can count the lette
 //
 //console.log(answer);
 
+
+
+/////*********BOUT DAMN TIME!!!!!!*************
+
 var splitput = input.split("");
 
-var answer = splitput.reduce(function(runningtotal, obj){ 
-        if (runningtotal.obj === undefined){
-             runningtotal.obj = 1;
-        }else{
-            return runningtotal.obj++;
-        } 
-},{})
-
+var answer = splitput.reduce(function(runningtotal, obj){
+    if (runningtotal[obj] !== undefined){
+        runningtotal[obj]++ ;
+    }else {
+        runningtotal[obj] = 1;
+    }
+    return runningtotal;
+},{}); 
+    
 
 console.log(answer);
