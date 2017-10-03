@@ -14,6 +14,9 @@ function walking() {
     if (answer === 'w') {
         console.log('Sweet! Walking!');
         nowWalking();
+    } else if (answer === "inventory") {
+        console.log("you have" + playerInventory);
+        walking();
     } else {
         console.log('Well sit there until you want to walk!');
         walking();
@@ -76,7 +79,11 @@ function ultimateFight() {
         getStuff();
         walking();
     } else {
-        if (readlineSync.keyInYN('Do you wish to continue fighting?')) {
+        var fightingthing = readlineSync.question('Do you wish to continue fighting?');
+        if (fightingthing === "y" || "yes") {
+            ultimateFight();
+        }else if  (answer === "inventory") {
+        console.log("you have" + playerInventory);
             ultimateFight();
         } else {
             console.log("You ran away!");
