@@ -1,0 +1,197 @@
+.nav_bar_bar {
+  width: 100vw;
+  height: 75px;
+  background-color: #070e0e;
+  margin-top: -20px;
+  margin-left: -7px;
+  position: fixed;
+  z-index:4;
+}
+
+.nav_bar_white {
+  width: 100vw;
+  height: 1px;
+  background-color: white;
+  margin-top: 70px;
+  position: fixed;
+}
+
+
+.header_text {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 20px;
+  padding-top: 20px;
+  color: white;
+  display:inline-block;
+  position: relative;
+}
+
+.nav_bar_left_div {
+  width: 50vw;
+  height: 40px;
+  float: left;
+  position: absolute;
+  display: block;
+  left:25%;
+  transform: translateX(-30%);
+}
+
+.nav_bar_right_div {
+  width: 50vw;
+  height: 40px;
+  left: 75%;
+  transform: translateX(-30%);
+  position: absolute;
+  display: block;
+}
+
+
+.logoimage {
+  width: 120px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1px;
+  display:block;
+  position: fixed;
+  z-index: 5;
+}
+
+.backgroundimage {
+  width: 100vw;
+  height: auto;
+  font-weight: 100;
+  left: -7.5px;
+  padding-top: 20px;
+  color: white;
+  display:inline-block;
+  position: relative;
+  z-index: -1;
+}
+
+.boxone{
+  width: 100vw;
+  height: auto;
+  font-weight: 100;
+  left: -7.5px;
+  top: 80px;
+  color: white;
+  display:inline-block;
+  position: absolute;
+  z-index: -1;
+}
+
+.logoTitle{
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 100;
+  margin: auto;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  display:inline-block;
+  position: fixed;
+  z-index: 5;
+}
+
+h2 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 100;
+  color: black;
+  position: absolute;
+  z-index: 0;
+
+}
+
+.boxonetexttitle{
+  left: 150px;
+  top: 180px;
+  position: absolute;
+  z-index: 2;
+}
+
+.boxoneblackline{
+  width: 90px;
+  height: 3.5px;
+  left: 150px;
+  top: 265px;
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+}
+
+
+.boxonetextbox{
+  height: 200px;
+  width: 420px;
+  top: 60px;
+  left: 12vw;
+  background-color: black;
+  margin-top: 250px;
+  position: absolute;
+  z-index: 2;
+  opacity: .9;
+}
+
+.boxonetextboxwhite{
+  height: 180px;
+  width: 395px;
+  top: 70px;
+  left: 12.9vw;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  margin-top: 250px;
+  position: absolute;
+  z-index: 2;
+}
+
+.boxoneblackboxtext {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 100;
+  padding-left: 20px;
+  padding-right: 40px;
+  width:350px;
+  left:10px;
+  height: 180px;
+  width: 370px;
+  color: white;
+  line-height: 1.5;
+  display:inline-block;
+  position: absolute;
+}
+
+.harry {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 100;
+  padding-left: 20px;
+  padding-right: 40px;
+  width:350px;
+  left:230px;
+  top: 100px;
+  height: 180px;
+  width: 370px;
+  color: white;
+  line-height: 1.5;
+  display:inline-block;
+  position: absolute;
+}
+
+.scroll-icons{
+  width: 100px;
+  top: 220px;
+  left: 130px;
+  position:absolute;
+
+}
