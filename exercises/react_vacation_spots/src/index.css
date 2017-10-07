@@ -1,0 +1,17 @@
+.vaca_card{
+  height: 400px;
+  width: 700px;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+
+}
+
+
+h2{
+
+  color: black;
+}

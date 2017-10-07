@@ -1,0 +1,133 @@
+.heading{  
+  height: 600px;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: -10px;
+  left: 0px;
+  position: relative;
+
+}
+.title{
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  font-size: 500%;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+}
+.upperleft{
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  font-size: 150%;
+  float: left;
+  top: 2%;
+  left: 5%;
+  position: absolute;
+}
+.undertitle{
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -90%);
+  position: absolute;
+}
+
+h6 {
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  position: relative;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.navigation{
+  float: right;
+  margin-right: 40px;
+}
+
+.blogchunk{
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  width: 500px;
+  color: black;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 800;
+  font-size: 25px;
+  position: relative;
+  margin-left: 30px;
+  display: block;
+
+}
+
+.undertext {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+  font-size: 21px;
+  margin-top: -10px;
+
+}
+
+.metatext {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: 100;
+  color: grey;
+  font-size: 18px;
+  margin-top: -15px;
+
+}
+
+.verybottom{
+  width: 30%;
+  left: 50%;
+  transform: translate(-40%, 0);
+  position: absolute;
+  margin:40px;
+}
+
+h7{
+  margin:20px;
+  text-align: center;
+  color: grey;
+
+}
+
+button {
+  background: #afb0b3;
+  background-image: -webkit-linear-gradient(top, #afb0b3, #b0b6bd);
+  background-image: -moz-linear-gradient(top, #afb0b3, #b0b6bd);
+  background-image: -ms-linear-gradient(top, #afb0b3, #b0b6bd);
+  background-image: -o-linear-gradient(top, #afb0b3, #b0b6bd);
+  background-image: linear-gradient(to bottom, #afb0b3, #b0b6bd);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  margin: 10px;
+  right: -60%;
+  position: relative;
+}
+
+button: hover{
+  background: #747778;
+  background-image: -webkit-linear-gradient(top, #747778, #707070);
+  background-image: -moz-linear-gradient(top, #747778, #707070);
+  background-image: -ms-linear-gradient(top, #747778, #707070);
+  background-image: -o-linear-gradient(top, #747778, #707070);
+  background-image: linear-gradient(to bottom, #747778, #707070);
+  text-decoration: none;
+}

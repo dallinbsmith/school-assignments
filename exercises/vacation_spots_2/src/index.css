@@ -1,0 +1,80 @@
+h1 {  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  color: black;
+  position: relative;
+  margin: auto;
+  left: 50%;
+  transform: translate(-14%, 0);
+  z-index:2
+}
+
+h4 {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+
+}
+
+.vacation_spots {
+      height: 400px;
+      width: 900px;
+      background-color: purple;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 20px;
+      border-style: solid;
+      border-color: black;
+      position: relative;
+
+}
+
+.place {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+}
+
+.price  {
+font-size: 28px;
+position: absolute;
+top: 65%;
+left: 50%;
+color: white;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+
+}
+
+.timeToGo  {
+font-size: 22px;
+position: absolute;
+top: 76%;
+left: 50%;
+color: white;
+margin-right: -50%;
+transform: translate(-50%, -50%)
+
+}
+
+
+img {
+
+
+  z-index: -2;
+}

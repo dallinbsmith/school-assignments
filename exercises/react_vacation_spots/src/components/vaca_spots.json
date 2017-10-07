@@ -1,0 +1,31 @@
+[
+  {
+    "place": "Meridian, Idaho",
+    "price": "$40",
+    "timeToGo": "Spring"
+  },{
+    "place": "China",
+    "price": "$1200",
+    "timeToGo": "Fall"
+  },{
+    "place": "Russia",
+    "price": "$1100",
+    "timeToGo": "Summer"
+  },{
+    "place": "Lebanon",
+    "price": "$400",
+    "timeToGo": "Spring"
+  },{
+      "place": "Mexico",
+      "price": "$300",
+      "timeToGo": "Summer"
+  },{
+      "place": "Peru",
+      "price": "$1200",
+      "timeToGo": "Summer"
+  },{
+      "place": "Puerto Rico",
+      "price": "$600",
+      "timeToGo": "Not Right Now"
+    }
+]

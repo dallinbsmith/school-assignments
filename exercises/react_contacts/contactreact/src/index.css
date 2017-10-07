@@ -1,0 +1,26 @@
+.card {
+  width: 200px;
+  height: 250px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+  margin: 10px;
+  display: inline-block;
+}
+
+.image_circle{
+  width:125px;
+  height: auto;
+  margin:auto;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%);
+  position: relative;
+}
+
+.name{
+  left: 50%;
+transform: translate(-15%);
+  font-family: "Bebas Neue";
+position: relative;
+}
