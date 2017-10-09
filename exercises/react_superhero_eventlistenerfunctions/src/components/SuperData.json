@@ -1,0 +1,38 @@
+[
+  {"name" : "US 1",
+    "image" : "https://source.superherostuff.com/wp-content/uploads/2017/01/US-1-trucker-superhero.jpg",
+    "superpower": "Drives a Truck",
+    "description": "As silly as “superhero truck driver” sounds, US 1 manages to crank that up to eleven. His supporting cast is littered with people who are named after truck/driving puns and his villains are equally odd. What sends it over the top are the bizarre gadgets in his truck, which, by the way, allow it to travel through space on occasion. Hmmmm. I wonder how efficient the gas mileage is on US’s space-faring big rig???",
+    "catchphrase" : "Ride Like Hell Cowboy"
+  },
+  {"name" : "Sixpack",
+    "image" : "https://source.superherostuff.com/wp-content/uploads/2017/01/DC_Comics_Hitman_-_Sixpack.jpg",
+    "superpower": "Throwing Beer Bottles",
+    "description": "If you ever meet Sixpack of Section 8, he’ll tell you many stories about how great a superhero he is. In reality, he’s nothing but a fat drunk! Sixpack only has one ability, and that’s to always be drunk. The only thing that makes him a threat is that he swings around broken bottles as his weapons of choice.",
+    "catchphrase" : "O'Deadly Darksheid BOOAAAKK"
+  },
+  {"name" : "Cpt.Planet",
+    "image" : "https://source.superherostuff.com/wp-content/uploads/2017/01/captain-planet-01.jpg",
+    "superpower": "Shapeshifting",
+    "description": "Earth, fire, wind, water, and heart! With those powers combined, they create one of the lamest superheroes ever. Called upon by the equally lame Planeteers, Captain Planet is something of an environmentally friendly Superman.",
+    "catchphrase" : " By your powers combined..I AM CAPTAIN PLANET!"
+  },
+  {"name" : "3-D Man",
+    "image" : "https://source.superherostuff.com/wp-content/uploads/2017/01/3D-Man-Marvel-Comics-Chandler-1.jpg",
+    "superpower": "Living inside 3-D Glasses",
+    "description": "Despite his many abilities, his weakness was how ridiculous the concept was. Other than actually living in 3-D glasses, there was his really obnoxious costume. Not to mention he could only be around for three hours at a time, which meant he had to check out in the middle of an adventure if it ran too long!",
+    "catchphrase" : "Through the Power of 3, I came to be"
+  },
+  {"name" : "Black.Condor",
+    "image" : "https://source.superherostuff.com/wp-content/uploads/2017/01/13-personajes-que-no-fueron-creados-por-DC-sino-comprados-2.png",
+    "superpower": "Flying",
+    "description": "While there’s been a few versions of the Black Condor, the original was probably the worst. Richard Grey Jr. survived an attack that killed his parents, and was then found and raised by a condor! For some strange reason, this gave Richard the ability to fly despite not being a bird or having any wings. Using his strangely convenient ability, he left his nest to fight crime!",
+    "catchphrase" : "We, the Freedom Fighters will Never Die"
+  },
+  {"name" : "Color Kid",
+    "image" : "https://source.superherostuff.com/wp-content/uploads/2017/01/767369-colorkid.jpg",
+    "superpower": "Change Color of Objects",
+    "description": "Matter-Eater Lad is pretty out there, but you have to be a new kind of useless for the Legion to reject you. On that note, meet Color Kid! Why does he call himself that? Because Color Kid’s power is to change the color of any object! That’s almost like being powerless, to be honest.",
+    "catchphrase" : "Through the Power of Starship Scarlet, I am the Fashion King"
+  }
+]
