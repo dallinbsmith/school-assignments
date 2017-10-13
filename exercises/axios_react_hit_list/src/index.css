@@ -1,0 +1,34 @@
+.hitcard {
+  height: 400px;
+  width: 320px;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+  position:relative;
+
+}
+
+.hitimage {
+    width:300px;
+    clip: rect(5px, 250px, 180px, 20px);
+    margin: auto;
+    left: 55%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
+
+.title {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  left:50%;
+  transform: translate(-50%);
+  line-height: 40px;
+  font-size: 40px;
+  color: firebrick;
+  top: 200px;
+  position: absolute;
+}
