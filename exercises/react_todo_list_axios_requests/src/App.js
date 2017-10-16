@@ -1,7 +1,8 @@
 import React from "react"
 import axios from "axios"
+import { Button, FormControl } from 'react-bootstrap';
 
-import Todocomponent from "./components/Todocomponent.js"
+import TodoContainer from "./components/TodoContainer"
 
 class App extends React.Component{
   constructor(){
@@ -15,9 +16,10 @@ class App extends React.Component{
       this.postANewTodo = this.postANewTodo.bind(this);
       this.changingStuff = this.changingStuff.bind(this);
       this.deleteThisJunk = this.deleteThisJunk.bind(this);
+      this.editThisJunk = this.editThisJunk.bind(this);
   }
   componentDidMount(){
-    axios.get(`https://api.vschool.io/nonnie/todo`).then((response) => {
+    axios.get(`https://api.vschool.io/dallin/todo`).then((response) => {
         this.setState({
           todolist : response.data.reverse()
 
@@ -25,16 +27,17 @@ class App extends React.Component{
     })
   }
   postANewTodo(){
-    for (var i = 0; i < 1000; i++){
-    axios.post(`https://api.vschool.io/nonnie/todo`, this.state.todo).then(responses => {
+    axios.post(`https://api.vschool.io/dallin/todo`, this.state.todo).then(responses => {
         this.setState((prevState) => {
           return {
-              todolist : [responses.data, ...prevState.todolist]
+              todolist : [responses.data, ...prevState.todolist],
+              todo: {
+                  title : ""
+              }
           }
         })
     })
   }
-}
   changingStuff(event) {
     const newValue = event.target.value;
     const name = event.target.name;
@@ -48,7 +51,7 @@ class App extends React.Component{
     });
 }
 deleteThisJunk(id){
-  axios.delete(`https://api.vschool.io/nonnie/todo/${id}`).then(response => {
+  axios.delete(`https://api.vschool.io/dallin/todo/${id}`).then(response => {
     this.setState(prevState => {
           const filteredArray = prevState.todolist.filter((obj) => {
               return obj._id !== id
@@ -60,16 +63,40 @@ deleteThisJunk(id){
       })
   })
 }
+editThisJunk(id, editedtodo){
+  axios.put(`https://api.vschool.io/dallin/todo/${id}`, editedtodo).then(response => {
+    let neweditedtodo = response.data
+    this.setState(prevState => {
+        const editedArray = prevState.todolist.map((obj) => {
+            if (obj._id === id){
+              return neweditedtodo
+        } else {
+          return obj
+      }
+    })
+    return {
+      ...prevState,
+      todolist: editedArray
+    }
+  })
+})
+}
+
+
   render() {
     return(
         <div>
-        <input type = "text" value = {this.state.todo.title} onChange = {this.changingStuff} name = "title"/>
-        <button onClick = {this.postANewTodo}>SEND IT</button>
+        <h1 className = "title">This a To Do List</h1>
+        <FormControl className= "input_submission" type = "text" value = {this.state.todo.title} onChange = {this.changingStuff} name = "title"/>
+        <Button className="sendbutton" bsStyle="primary" bsSize="large" onClick = {this.postANewTodo}>SEND IT</Button>
           {this.state.todolist.map((item, i) => {
               return (
-                <Todocomponent
+                <TodoContainer
                       todo = {item}
-                      deleting = {this.deleteThisJunk}/>
+                      deleting = {this.deleteThisJunk}
+                      editThisJunk = {this.editThisJunk}
+                      key = {item.title + i}/>
+
             )
           }
         )}
