@@ -1,0 +1,29 @@
+.app-container{
+  background-image: url("./images/personal_website_background-01.png");
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: -10px;
+  height: 1920px;
+}
+
+.nav-bar{
+  font-family: "Arial Black";
+}
+
+.home{
+  font-family: "Arial Black";
+  transform: rotate(90deg);
+}
+
+.navbar-container{
+  font-family: din-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: red;
+}
+
+.resume{
+transform: rotate(90deg);
+}

@@ -6,7 +6,6 @@ function ServicesComponent(props) {
     let searchId = props.searchId;
     return (
         <div className="services-component-container">
-            <h1 className="header-text">What we can do for you!</h1>
             <div className="services-window-container">
                 <div className="services-container">
                     {props.genServices()}

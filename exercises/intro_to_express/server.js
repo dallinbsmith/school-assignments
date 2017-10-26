@@ -24,6 +24,14 @@ app.post("/tacos", (req, res) => {
     res.send(req.body);
 });
 
+app.delete("/tacos/:id", (req,res)=>{
+  res.send("DELETE taco");
+})
+
+app.delete("/tacos/:id", (req,res)=>{
+  res.send("DELETE taco");
+})
+
 app.listen(8000, ()=>{
     console.log("Fartbuckets of poop");
 });
