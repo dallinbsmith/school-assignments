@@ -2,19 +2,12 @@
   background-image: url("./images/personal_website_background-01.png");
   background-size: 1920px 1080px;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 101%;
   margin: -10px;
-  height: 1920px;
+  height: 1020px;
+  position: relative;
 }
 
-.nav-bar{
-  font-family: "Arial Black";
-}
-
-.home{
-  font-family: "Arial Black";
-  transform: rotate(90deg);
-}
 
 .navbar-container{
   font-family: din-condensed, sans-serif;
@@ -26,4 +19,15 @@
 
 .resume{
 transform: rotate(90deg);
+}
+
+
+.dallin-avatar{
+  background-image: url("./images/Dallin_Avatar.png");
+  background-size: 500px 250px;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 480px;
+  margin: 0 auto;
+  margin-top: 200px;
 }

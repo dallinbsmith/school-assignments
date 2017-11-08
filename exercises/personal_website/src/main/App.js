@@ -19,7 +19,7 @@ function App() {
                 <Route path="/contact" component={Contact}/>
             <Route path="/services" component={ServicesContainer}/>
             </Switch>
-            <Avatar/>
+            <Avatar className = "avatar"/>
             <Footer/>
         </div>
     )

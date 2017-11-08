@@ -1,10 +1,14 @@
 import React from "react";
 
-import BountySubmission from "./bountysubmission/Container"
+import FormContainer from "./bountyform/Container.js";
+import BountySubmission from "./bountysubmission/Container";
 
 function App(){
     return(
+      <div>
         <BountySubmission />
+        <FormContainer />
+      </div>
     )
 }
 
