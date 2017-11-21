@@ -41,3 +41,33 @@ frontStr("whatever", 3);
 
 
 module.exports = frontStr
+
+
+
+//        function findTheValue(object, value) {
+//            return Object.keys(object).find(key => object[key] === value);
+//        }
+
+
+
+// const leaderObjs = array.map((str) => {
+//     let obj ={};
+//     const splitStr = str.split(":");
+//     obj[splitStr[0]] = splitStr[1].substring(1);
+//     return obj
+// });
+
+// function findTheValue(array, value) {
+//     return Object.keys(object).find(key => object[key] === value);
+// }
+// const l = findTheValue(leaderObj[0], "");
+// console.log(l)
+
+
+
+    const leaderObjs = array.map((str) => {
+        let obj ={};
+        const splitStr = str.split(":");
+        obj[splitStr[0]] = splitStr[1].substring(1);
+        return obj
+    });
