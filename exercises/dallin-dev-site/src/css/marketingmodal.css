@@ -1,0 +1,437 @@
+.marketing-texture{
+    background-image: url('../main/assets/modal-main/marketing/marketing-texture.png');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    bottom: 0px;
+}
+@media (max-width: 711px) {
+    .marketing-texture{
+        left: 50%;
+        transform: translate(-50%);
+        width: 130%;
+    }
+}
+
+.amazon-main-img{
+    background-image: url("../main/assets/modal-main/marketing/amazon-main.png");
+    background-size: cover;
+    height: 415px;
+    width: 515px;
+    position: relative;
+    float: left;
+    left: 2%;
+}
+@media (min-width: 1430px) {
+    .amazon-main-img{
+        position: absolute;
+        left: 4%;
+        top: 100px;
+    }
+}
+@media (min-width: 1092px) and (max-width: 1235px) {
+    .amazon-main-img{
+        height: 335px;
+        width: 414px;
+        top: 50px;
+        left: -3%
+    }
+}
+@media(max-width: 1092px){
+    .amazon-main-img{
+        display: none;
+    }
+}
+
+.kickstarter-main-img{
+    background-image: url("../main/assets/modal-main/marketing/kickstarter-main.png");
+    background-size: cover;
+    height: 475px;
+    width: 475px;
+    position: relative;
+    float: left;
+    left: -15%;
+    top: 50px;
+}
+@media (min-width: 1145px) and (max-width: 1370px) {
+    .kickstarter-main-img{
+        left: -3%;
+        top: -15px
+    }
+}
+@media (min-width: 986px) and (max-width: 1145px) {
+    .kickstarter-main-img{
+        height: 475px;
+        width: 415px;
+        left: -3%;
+        top: -15px
+    }
+}
+@media (max-width: 986px) {
+    .kickstarter-main-img{
+        display: none;
+    }
+}
+
+.amazon-bullets{
+    position: relative;
+    height: 260px;
+    width: 37%;
+    background-color: black;
+    opacity: .7;
+    float: right;
+    top: 100px;
+    right: 20px;
+    border: solid 3px #be1e2d;
+}
+@media (min-width: 1430px) {
+    .amazon-bullets{
+        position: absolute;
+        right: 20px;
+        top: 250px;
+    }
+}
+@media (min-width: 1092px) and (max-width: 1235px) {
+    .amazon-bullets{
+        width: 43%;
+    }
+}
+@media (min-width: 825px) and (max-width: 1092px) {
+    .amazon-bullets{
+        width: 90%;
+        height: 210px;
+    }
+}
+@media (min-width: 711px) and (max-width: 825px) {
+    .amazon-bullets{
+        width: 90%;
+        top: 180px;
+        height: 210px;
+    }
+}
+@media (max-width: 711px) {
+    .amazon-bullets{
+        width: 125%;
+        top: 180px;
+        left: 12.5%;
+        height: 230px;
+    }
+}
+
+.amazon-bullet-header{
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.amazon-bullet{
+    color: white;
+    margin-left: 35px;
+    margin-right: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.kickstarter-icons{
+    height: 280px;
+    width: 45%;
+    right: 10px;
+    top: 240px;
+    position: absolute;
+}
+@media (min-width: 450px) and (max-width: 986px) {
+    .kickstarter-icons{
+        height: 305px;
+        width: 385px;
+        left: 50%;
+        top: 220px;
+        transform: translate(-42%);
+    }
+}
+@media (max-width: 450px) {
+    .kickstarter-icons{
+        height: 295px;
+        width: 335px;
+        left: 50%;
+        top: 220px;
+        transform: translate(-42%);
+    }
+}
+
+.marketing-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+.marketing-row-icons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    align-items: center;
+    left: -10%;
+    color: white;
+    justify-content: space-around;
+}
+
+.kickstarter-gymbag{
+    background-image: url('../main/assets/modal-main/marketing/all-in-thumbnail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 230px;
+    cursor: pointer;
+    position: relative;
+    bottom: -40px;
+}
+
+.kickstarter-gymbag:hover{
+    opacity: .7;
+}
+
+.kickstarter-duo{
+    background-image: url('../main/assets/modal-main/marketing/duo-thumbnail-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 80px;
+    position: relative;
+    cursor: pointer;
+    opacity: .65;
+}
+.kickstarter-duo:hover{
+    opacity: .3;
+}
+
+.kickstarter-cask{
+    background-image: url('../main/assets/modal-main/marketing/cask-thumbnail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+    cursor: pointer;
+    width: 150px;
+    position: relative;
+}
+.kickstarter-cask:hover{
+    opacity: .7;
+}
+
+.events-videos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+    position: relative;
+    top: 0px;
+    right: -290px;
+}
+@media (min-width: 1240px) and (max-width: 1525px) {
+    .events-videos-container{
+        width: 60%;
+        right: -310px;
+    }
+}
+@media (min-width: 1170px) and (max-width: 1240px) {
+    .events-videos-container{
+        width: 60%;
+        right: -310px;
+    }
+}
+@media (min-width: 711px) and (max-width: 1170px) {
+    .events-videos-container{
+        position: absolute;
+        width: 95%;
+        left: 50%;
+        top: 230px;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 711px) {
+    .events-videos-container{
+        position: absolute;
+        width: 130%;
+        left: 50%;
+        top: 230px;
+        height: 220px;
+        transform: translateX(-50%);
+    }
+}
+
+.events-main-img{
+    background-image: url("../main/assets/modal-main/marketing/events-main.png");
+    background-size: cover;
+    height: 400px;
+    width: 315px;
+    position: absolute;
+    float: left;
+    top: 90px;
+}
+@media (min-width: 1170px) and (max-width: 1240px) {
+    .events-main-img{
+        left: -5%;
+    }
+}
+@media (max-width: 1170px) {
+    .events-main-img{
+        height: 1px;
+        width: 1px;
+        postion: absolute;
+        left: -2000px;
+    }
+}
+
+.events-thumbnails{
+    background-size: cover;
+    height: 122px;
+    width: 188px;
+    position: relative;
+    cursor: pointer;
+}
+.events-thumbnails:hover{
+    opacity: .7;
+}
+@media (min-width: 1240px) and (max-width: 1525px) {
+    .events-thumbnails{
+        height: 102px;
+        width: 158px;
+    }
+}
+@media (min-width: 1170px) and (max-width: 1240px) {
+    .events-thumbnails{
+        height: 96px;
+        width: 148px;
+    }
+}
+@media (min-width: 522px) and (max-width: 962px) {
+    .events-thumbnails{
+        height: 90px;
+        width: 139px;
+    }
+}
+@media (max-width: 522px) {
+    .events-thumbnails{
+        height: 64px;
+        width: 100px;
+    }
+}
+
+.events-vid-thumbnail-1{
+    background-image: url("../main/assets/modal-main/marketing/asamprajnata-thumbnail-1.png");
+}
+
+.events-vid-thumbnail-2{
+    background-image: url("../main/assets/modal-main/marketing/events-thumbnail-2.png");
+}
+
+.events-vid-thumbnail-3{
+    background-image: url("../main/assets/modal-main/marketing/events-thumbnail-3.png");
+}
+
+.marketing-box-1{
+    position: relative;
+    width: 70%;
+    height: 250px;
+    position: relative;
+    top: 250px;
+    right: -290px;
+    background-color: black;
+    opacity: .7;
+    border: solid 3px #be1e2d;
+}
+@media (min-width: 1170px) and (max-width: 1525px) {
+    .marketing-box-1{
+        width: 60%;
+        right: -310px;
+    }
+}
+@media (min-width: 711px) and (max-width: 1170px) {
+    .marketing-box-1{
+        position: absolute;
+        width: 95%;
+        left: 50%;
+        height: 220px;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 711px) {
+    .marketing-box-1{
+        position: absolute;
+        width: 130%;
+        left: 50%;
+        height: 220px;
+        transform: translateX(-50%);
+    }
+}
+.events-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 115px;
+    position: relative;
+    top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.events-row-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 115px;
+    position: relative;
+    top: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.events-text-container{
+    width: 188px;
+    height: 10px;
+    text-align: center;
+}
+.event-text{
+    margin: auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.youtube-vid-events{
+    height: 360px;
+    width: 640px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 767px){
+    .youtube-vid-events{
+        height: 180px;
+        width: 320px;
+    }
+}
+
+.vid-close{
+    background-image: url('../main/assets/modal-main/marketing/youtube-close.png');
+    background-size: cover;
+    width: 90px;
+    height: 32px;
+    position: relative;
+    top: 470px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.vid-close:hover{
+    background-image: url('../main/assets/modal-main/marketing/youtube-close-hover.png');
+}

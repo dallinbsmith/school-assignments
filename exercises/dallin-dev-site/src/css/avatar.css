@@ -1,0 +1,395 @@
+.avatar-component{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 900px;
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .avatar-component{
+        height: 800px;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .avatar-component{
+        height: 700px;
+    }
+}
+@media (max-width: 475px) {
+    .avatar-component{
+        height: 600px;
+    }
+}
+
+.avatar-holder{
+    height: auto;
+    align-items: center;
+    position: relative;
+    width: 37%;
+    top: 200px;
+}
+
+.avatar-pic{
+    position: relative;
+    width: 100%;
+    top: -120px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width: 1200px) {
+    .avatar-pic{
+        width: 500px;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .avatar-pic{
+        width: 400px;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .avatar-pic{
+        top: -250px;
+        width: 400px;
+    }
+}
+@media (max-width: 475px) {
+    .avatar-pic{
+        width: 300px;
+        top: -220px;
+    }
+}
+
+.eyebrows{
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    text-align: center;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1200px) {
+    .eyebrows{
+        width: 500px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .eyebrows{
+        top: 28%;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .eyebrows{
+        width: 400px;
+        top: 130px;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .eyebrows{
+        top: -20px;
+        width: 400px;
+    }
+}
+@media (max-width: 475px) {
+    .eyebrows{
+        width: 300px;
+        top: -30px;
+    }
+}
+
+.mouth-container{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: calc(70% - 107px);
+    left: 50%;
+    transform:translate(-50%);
+}
+@media (min-width: 1200px) {
+    .mouth-container{
+        top: 252px;
+        width: 500px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .mouth-container{
+        top: calc(70% - 114px);
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .mouth-container{
+        width: 400px;
+        top: 193px;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .mouth-container{
+        width: 400px;
+        top: 50px;
+    }
+}
+@media (max-width: 475px) {
+    .mouth-container{
+        width: 300px;
+        top: 18px;
+    }
+}
+
+.avatar-mouth{
+    position: relative;
+    width: 10%;
+    top: 50%;
+    left: -5px;
+}
+
+.quote-box{
+    position: relative;
+    width: 70%;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+@media (min-width: 1200px) {
+    .quote-box{
+        width: 300px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .quote-box{
+        top: -20px;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .quote-box{
+        width: 300px;
+        top: -15px;
+    }
+}
+@media (max-width: 787px) {
+    .quote-box{
+        width: 250px;
+        top: -155px;
+    }
+}
+
+.icon-container{
+    display: flex;
+    position: relative;
+    width: 60%;
+    top: -110px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (min-width: 1200px) {
+    .icon-container{
+        width: 250px;
+        top: -110px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .icon-container{
+        top: -120px;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .icon-container{
+        width: 270px;
+        top: -117px;
+        left: 41%;
+        transform: translate(-50%);
+    }
+}
+
+@media (min-width: 590px) and (max-width: 787px) {
+    .icon-container{
+        width: 210px;
+        top: -247px;
+        left: 42%;
+        transform: translate(-50%);
+    }
+}
+@media (min-width: 475px) and (max-width: 590px) {
+    .icon-container{
+        width: 220px;
+        top: -247px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media (max-width: 475px) {
+    .icon-container{
+        width: 200px;
+        top: -235px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.avatarh4{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .avatarh4{
+        font-size: 25px;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .avatarh4{
+        font-size: 25px;
+    }
+}
+@media (max-width: 475px) {
+    .avatarh4{
+        font-size: 18px;
+    }
+}
+
+.heart-icon{
+    position: relative;
+    height:34px;
+    top: 50%;
+    width: auto;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .heart-icon{
+        height:30px;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .heart-icon{
+        height: 28px;
+    }
+}
+@media (max-width: 475px) {
+    .heart-icon{
+        height: 24px;
+    }
+}
+.message-icon{
+    position: relative;
+    height:28px;
+    width: auto;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .message-icon{
+        height:24px;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .message-icon{
+        height: 22px;
+    }
+}
+@media (max-width: 475px) {
+    .message-icon{
+        height: 18px;
+    }
+}
+
+.friend-icon{
+    position: relative;
+    height:28px;
+    width: auto;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .friend-icon{
+        height:24px;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .friend-icon{
+        height: 22px;
+    }
+}
+@media (max-width: 475px) {
+    .friend-icon{
+        height: 18px;
+    }
+}
+
+.avatar-buttons-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: -100px;
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .avatar-buttons-container{
+        width: 350px;
+        left: 50%;
+        transform: translate(-50%);
+        top: -220px;
+    }
+}
+@media (max-width: 475px) {
+    .avatar-buttons-container{
+        width: 350px;
+        left: 50%;
+        transform: translate(-50%);
+        top: -200px;
+    }
+}
+
+.make-likes{
+    background-image: url('../main/assets/avatar/make-likes.png');
+    background-size: cover;
+    position: relative;
+    width: 135px;
+    height: 35px;
+    cursor: pointer;
+}
+.make-likes:hover{
+    background-image: url('../main/assets/avatar/make-likes-hover.png');
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .make-likes{
+        width: 105px;
+        height: 28px;
+    }
+}
+@media (max-width: 991px) {
+    .make-likes{
+        width: 75px;
+        height: 20px;
+    }
+}
+
+.make-friends{
+    background-image: url('../main/assets/avatar/make-friends.png');
+    background-size: cover;
+    position: relative;
+    width: 160px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.make-friends:hover{
+    background-image: url('../main/assets/avatar/make-friends-hover.png');
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    .make-friends{
+        width: 125px;
+        height: 28px;
+    }
+}
+@media (max-width: 991px) {
+    .make-friends{
+        width: 90px;
+        height: 20px;
+    }
+}
+
+.friend-icon:hover, .message-icon:hover, .heart-icon:hover, .see-projects-container:hover{
+    cursor: pointer;
+    opacity: .7;
+}

@@ -1,0 +1,220 @@
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 150px;
+    transition: height 1s;
+    z-index: 2;
+
+}
+
+.nav-container-scroll {
+    height: 150px;
+    overflow: hidden;
+    border-bottom: 4px solid #d1d3d4;
+}
+
+.current-page-container {
+    transform: translateY(65%);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    padding-right: 50px;
+    font-size: 10px;
+    transition: all 1s;
+    z-index: 2;
+    bottom: -40px;
+    position: relative;
+    opacity: 0;
+}
+
+.current-page-container-scroll {
+    transform: translateY(-5%);
+    color: #d1d3d4;
+    opacity: 1;
+    /*position: relative;
+    top: auto;
+    height: 250px;*/
+}
+
+.link-container {
+    display: flex;
+    align-items: flex-end;
+    width: 300px;
+    float: left;
+    justify-content: space-around;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #d1d3d4;
+    text-decoration: none;
+    margin: 0;
+    color: black;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 787px) and (max-width: 991px) {
+    .nav-link{
+        padding-bottom: 0px;
+    }
+}
+
+.nav-link:hover {
+    color: #d1d3d4;
+}
+
+.nav-page {
+    transition: all 0.1s ease-in;
+    color: #FFF;
+}
+
+.nav-page:hover {
+    color: #d1d3d4;
+    border-right: 4px solid #d1d3d4;
+    padding-right: 13px;
+}
+@media (max-width: 787px) {
+    .nav-page{
+        font-size: 16px;
+        padding-right: 0px;
+    }
+}
+
+.route-nav {
+    text-decoration: none;
+    margin-right: -180px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: hover 0.1s ease-in;
+    transform: rotate(-90deg);
+}
+
+.nav-page-about{
+    position: relative;
+    left: 8px;
+}
+
+.top-icons{
+    display: flex;
+    height: 50px;
+    width: 200px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.contact-icons{
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 1px;
+}
+
+.linkedin-icon{
+    background-image: url("../main/assets/contact-icons/linkedin-icon.png");
+}
+.linkedin-icon:hover{
+    background-image: url("../main/assets/contact-icons/linkedin-icon-red.png");
+}
+.mail-icon{
+    background-image: url("../main/assets/contact-icons/mail-icon-01.png");
+}
+.mail-icon:hover{
+    background-image: url("../main/assets/contact-icons/mail-icon-red.png");
+}
+.git-icon{
+    background-image: url("../main/assets/contact-icons/git-icon.png");
+}
+.git-icon:hover{
+    background-image: url("../main/assets/contact-icons/git-icon-red.png");
+}
+
+.logo-container{
+    display: flex;
+    position: fixed;
+    width: 60px;
+    top: 28px;
+    float: right;
+    right: 225px;
+    margin: auto;
+    justify-content: center;
+}
+
+.dallin-logo{
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* /// NAVBAR IPAD \\\ */
+@media (max-width: 991px) {
+    .nav-container {
+        padding: 0;
+        height: 80px;
+        position: static;
+        transition: all 0.2s;
+    }
+    .route-nav {
+        position: relative;
+        top: -20px;
+        transform: rotate(0deg);
+    }
+
+    .hi-container {
+        display: none
+    }
+
+    .hi-container-scroll {
+        display: none;
+    }
+
+    .current-page-container {
+        display: none;
+    }
+
+    .current-page-container-scroll {
+        display: none;
+    }
+
+    .link-container {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: 0;
+        background-color: black;
+        z-index: 2;
+        transition: all 0.2s;
+    }
+
+    .link-container-scroll {
+        height: 100px;
+    }
+}
+@media (max-width: 787px) {
+    .link-container{
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@media (max-width: 475px) {
+    .route-nav{
+        left: 3%;
+    }
+}

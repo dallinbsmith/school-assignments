@@ -1,0 +1,82 @@
+.blytz-texture{
+    background-image: url('../main/assets/modal-main/fullstack/fullstack-texture.png');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    bottom: 0px;
+}
+@media (max-width: 711px) {
+    .blytz-texture{
+        left: 50%;
+        transform: translate(-50%);
+        width: 130%;
+    }
+}
+
+.blytz-hand{
+    background-image: url("../main/assets/modal-main/fullstack/blytz-hand.png");
+    background-size: cover;
+    height: 435px;
+    width: 330px;
+    position: fixed;
+    float: right;
+    bottom: 0px;
+    right: 100px;
+}
+@media(min-width:700px) and (max-width:1000px){
+    .blytz-hand{
+        height: 335px;
+        width: 245px;
+        right: 50px;
+    }
+}
+@media(max-width:700px){
+    .blytz-hand{
+        display: none;
+    }
+}
+
+.blytz-thumbnail-1{
+    background-image: url("../main/assets/modal-main/fullstack/blytz-thumbnail-1.png");
+    background-size: cover;
+    height: 125px;
+    width: 220px;
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    .blytz-thumbnail-1{
+        position: absolute;
+        float: middle;
+        margin: 0px;
+        left: 50%;
+        bottom: 160px;
+        transform: translate(-50%);
+    }
+}
+
+.blytz-thumbnail-2{
+    background-image: url("../main/assets/modal-main/fullstack/blytz-thumbnail-2.png");
+    background-size: cover;
+    height: 125px;
+    width: 220px;
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    .blytz-thumbnail-2{
+        position: fixed;
+        float: middle;
+        margin: 0px;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%);
+    }
+}

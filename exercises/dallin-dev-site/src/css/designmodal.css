@@ -1,0 +1,596 @@
+.design-texture{
+    background-image: url('../main/assets/modal-main/design/design-texture.png');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    bottom: 0px;
+}
+
+@media (max-width: 711px) {
+    .design-texture{
+        left: 50%;
+        transform: translate(-50%);
+        width: 130%;
+    }
+}
+
+.defy-main-img{
+    background-image: url("../main/assets/modal-main/design/defy-main.png");
+    background-size: cover;
+    height: 335px;
+    width: 485px;
+    position: relative;
+    float: left;
+    left: -18%;
+    top: 120px;
+}
+@media(min-width: 1797px){
+    .defy-main-img{
+        left: -8%;
+        top: 120px;
+    }
+}
+@media(min-width: 1298px) and (max-width: 1440px){
+    .defy-main-img{
+        left: -25%;
+        height: 265px;
+        width: 425px;
+        top: 170px;
+    }
+}
+@media(min-width: 1165px) and (max-width: 1298px){
+    .defy-main-img{
+        left: -25%;
+        height: 225px;
+        width: 335px;
+        top: 205px;
+    }
+}
+@media(max-width: 1165px){
+    .defy-main-img{
+        display: none;
+    }
+}
+
+.defy-thumbnail-1{
+    background-image: url("../main/assets/modal-main/design/defy-thumbnail-1.png");
+    background-size: cover;
+    height: 110px;
+    width: 190px;
+    position: relative;
+    margin-right: 3%;
+    margin-top: 35px;
+    cursor: pointer;
+    left: 9%;
+}
+@media(min-width: 2097px){
+    .defy-thumbnail-1{
+    left: 53%;
+    top: 330px;
+    }
+}
+@media(max-width: 550px){
+    .defy-thumbnail-1{
+        height: 90px;
+        width: 150px;
+        left: 8%;
+    }
+}
+.defy-thumbnail-2{
+    background-image: url("../main/assets/modal-main/design/defy-thumbnail-2.png");
+    background-size: cover;
+    height: 110px;
+    width: 190px;
+    position: relative;
+    margin-right: 3%;
+    margin-top: 15px;
+    left: 9%;
+    cursor: pointer;
+}
+@media(min-width: 2097px){
+    .defy-thumbnail-2{
+    left: 53%;
+    top: 330px;
+    }
+}
+@media(max-width: 550px){
+    .defy-thumbnail-2{
+        height: 90px;
+        width: 150px;
+        left: 8%
+    }
+}
+
+.defy-thumbnail-3{
+    background-image: url("../main/assets/modal-main/design/defy-thumbnail-3.png");
+    background-size: cover;
+    height: 235px;
+    width: 200px;
+    position: relative;
+    float: right;
+    margin-right: 7%;
+    top: -235px;
+    cursor: pointer;
+}
+@media(min-width: 2097px){
+    .defy-thumbnail-3{
+    left: 44%;
+    top: 95px;
+    }
+}
+@media(max-width: 550px){
+    .defy-thumbnail-3{
+        height: 195px;
+        width: 160px;
+        top:-195px;
+        margin-right: 8%;
+    }
+}
+
+.defy-thumbnail-container{
+    width: 480px;
+    position: relative;
+    height: 300px;
+    float: right;
+    top: -105px;
+}
+@media(min-width:1741px) and (max-width: 2097px){
+    .defy-thumbnail-container{
+        left: 0%;
+        top: 80px;
+    }
+}
+@media(min-width: 1297px) and (max-width: 1440px){
+    .defy-thumbnail-container{
+        top: -40px;
+    }
+}
+@media(min-width: 1165px) and (max-width: 1298px){
+    .defy-thumbnail-container{
+        height: 225px;
+        top: 0px;
+        right: 0%;
+    }
+}
+@media(min-width: 550px) and (max-width: 1165px){
+    .defy-thumbnail-container{
+        height: 225px;
+        top: 220px;
+        position: absolute;
+        left: calc(60% - 300px)
+    }
+}
+@media(max-width: 550px){
+    .defy-thumbnail-container{
+        height: 225px;
+        width: 380px;
+        top: 220px;
+        position: absolute;
+        left: calc(20% - 109px)
+    }
+}
+
+.student-main-img{
+    background-image: url("../main/assets/modal-main/design/student-main-1.png");
+    background-size: cover;
+    height: 351px;
+    width: 352px;
+    position: relative;
+    float: left;
+    left: 6%;
+    top: 100px;
+}
+@media(min-width: 1181px) and (max-width: 1400px){
+    .student-main-img{
+        top: 170px;
+        height: 301px;
+        width: 302px;
+    }
+}
+@media(max-width: 1181px){
+    .student-main-img{
+        display: none;
+    }
+}
+
+.design-thumbs-container{
+    width: 480px;
+    position: absolute;
+    height: 10px;
+    float: right;
+    right: 0px;
+    bottom: 200px;
+    margin: auto;
+}
+@media(min-width: 550px) and (max-width: 1180px){
+    .design-thumbs-container{
+        margin: auto;
+        float: middle;
+        left: calc(20% - 130px)
+    }
+}
+@media(max-width: 550px){
+    .design-thumbs-container{
+        height: 225px;
+        width: 380px;
+        bottom: -30px;
+        margin: auto;
+        float: middle;
+        left: calc(20% - 109px)
+    }
+}
+
+.ropechair-main-img{
+    background-image: url("../main/assets/modal-main/design/ropechair-main.png");
+    background-size: cover;
+    height: 531px;
+    width: 510px;
+    position: relative;
+    float: left;
+    left: 0%;
+    top: 0px;
+}
+@media(max-width: 1180px){
+    .ropechair-main-img{
+        display: none;
+    }
+}
+
+.rope-title{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    float: left;
+    top: 7px;
+    left: 4%;
+}
+
+.design-box{
+    position: relative;
+    height: 260px;
+    width: 90%;
+    background-color: black;
+    opacity: .7;
+    float: right;
+    bottom: 70px;
+    right: 20px;
+    border: solid 3px #be1e2d;
+}
+@media(max-width: 550px){
+    .design-box{
+        bottom: 90px;
+        height: 225px;
+    }
+}
+
+.design-box-2{
+    position: relative;
+    height: 265px;
+    width: 90%;
+    background-color: black;
+    opacity: .7;
+    float: right;
+    top: 20px;
+    right: 20px;
+    border: solid 3px #be1e2d;
+}
+@media (min-width: 2097px){
+    .design-box-2{
+        top: 350px;
+        right: -40%;
+    }
+}
+@media(max-width: 550px){
+    .design-box-2{
+        height: 225px;
+    }
+}
+
+.design-box-3{
+    position: relative;
+    height: 265px;
+    width: 90%;
+    background-color: black;
+    opacity: .7;
+    float: right;
+    top: 205px;
+    right: 20px;
+    border: solid 3px #be1e2d;
+}
+.design-box-4{
+    position: relative;
+    height: 265px;
+    width: 90%;
+    background-color: black;
+    opacity: .7;
+    float: right;
+    top: -90px;
+    right: 20px;
+    border: solid 3px #be1e2d;
+}
+
+.ropechair-thumbnail-1{
+    background-image: url("../main/assets/modal-main/design/ropechair-thumbnail-1.png");
+    background-size: cover;
+    height: 125px;
+    width: 180px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 15px;
+    bottom: -20px;
+    left: 10%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .ropechair-thumbnail-1{
+        height: 105px;
+        width: 140px;
+        bottom: 0px;
+    }
+}
+
+.ropechair-thumbnail-2{
+    background-image: url("../main/assets/modal-main/design/ropechair-thumbnail-2.png");
+    background-size: cover;
+    height: 125px;
+    width: 180px;
+    position: relative;
+    margin-top: 15px;
+    bottom: 240px;
+    float: right;
+    left: -10%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .ropechair-thumbnail-2{
+        height: 105px;
+        width: 140px;
+        bottom: 225px;
+    }
+}
+
+.klim-thumbnail-1{
+    background-image: url("../main/assets/modal-main/design/klim-glove-thumbnail.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 15px;
+    top: -70px;
+    left: 10%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .klim-thumbnail-1{
+    top: -92px;
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.klim-thumbnail-2{
+    background-image: url("../main/assets/modal-main/design/klim-goggle-case.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -198px;
+    left: 52%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .klim-thumbnail-2{
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.klim-thumbnail-3{
+    background-image: url("../main/assets/modal-main/design/klim-goggle-renderings.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -204px;
+    left: 52%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .klim-thumbnail-3{
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.klim-main-img{
+    background-image: url("../main/assets/modal-main/design/klim-goggles.png");
+    background-size: cover;
+    height: 215px;
+    width: 445px;
+    position: relative;
+    float: left;
+    left: 5%;
+    top: 180px;
+}
+@media(min-width: 1181px) and (max-width: 1400px){
+    .klim-main-img{
+        top: 200px;
+        left: 1%;
+        height: 185px;
+        width: 375px;
+    }
+}
+@media(max-width: 1181px){
+    .klim-main-img{
+        display: none;
+    }
+}
+
+
+.wicked-main-img{
+    background-image: url("../main/assets/modal-main/design/wicked-main.png");
+    background-size: cover;
+    height: 445px;
+    width: 485px;
+    position: relative;
+    float: left;
+    left: -5%;
+    top: 90px;
+}
+@media(min-width: 1181px) and (max-width: 1400px){
+    .wicked-main-img{
+        top: 150px;
+        height: 385px;
+        width: 425px;
+    }
+}
+@media(max-width: 1181px){
+    .wicked-main-img{
+        display: none;
+    }
+}
+
+
+.wicked-thumbnail-1{
+    background-image: url("../main/assets/modal-main/design/wicked-in-ear.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 15px;
+    top: -75px;
+    left: 10%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .wicked-thumbnail-1{
+    top: -92px;
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.wicked-thumbnail-2{
+    background-image: url("../main/assets/modal-main/design/wicked-on-ear.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -205px;
+    left: 52%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .wicked-thumbnail-2{
+    top: -200px;
+    height: 95px;
+    width: 150px;
+    }
+}
+.wicked-thumbnail-3{
+    background-image: url("../main/assets/modal-main/design/wicked-over-ear.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -205px;
+    left: 52%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .wicked-thumbnail-3{
+    top: -200px;
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.wicked-thumbnail-4{
+    background-image: url("../main/assets/modal-main/design/wicked-glamour-shot.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -335px;
+    left: 10%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .wicked-thumbnail-4{
+    top: -310px;
+    height: 95px;
+    width: 150px;
+    }
+}
+.student-thumbnail-1{
+    background-image: url("../main/assets/modal-main/design/student-thumbnail-1.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 15px;
+    top: -72px;
+    left: 10%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .student-thumbnail-1{
+    top: -92px;
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.student-thumbnail-2{
+    background-image: url("../main/assets/modal-main/design/student-thumbnail-2.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -200px;
+    left: 52%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .student-thumbnail-2{
+    top: -200px;
+    height: 95px;
+    width: 150px;
+    }
+}
+
+.student-thumbnail-3{
+    background-image: url("../main/assets/modal-main/design/student-thumbnail-3.png");
+    background-size: cover;
+    height: 115px;
+    width: 188px;
+    position: relative;
+    margin-right: 5%;
+    margin-top: 13px;
+    top: -200px;
+    left: 52%;
+    cursor: pointer;
+}
+@media(max-width: 550px){
+    .student-thumbnail-3{
+    top: -200px;
+    height: 95px;
+    width: 150px;
+    }
+}

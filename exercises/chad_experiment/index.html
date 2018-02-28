@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assign 06</title>
+
+    <link rel="stylesheet" href="form_style.css" type="text/css">
+    <script src="function.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <form onsubmit= "totalCost()">
+        <fieldset>
+            <table>
+                <tr>
+                    <th style="border-bottom: 1px solid #bbbbbb;">
+                        <h1>Products</h1>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td style="border-right: 1px solid #bbbbbb;">
+                        <input class = "productCheckbox" type="checkbox" name="prod_select"  id="product_one" value="31.95"> Product 1
+                    </td>
+
+                    <td style="border-right: 1px solid #bbbbbb;">
+                        <input class = "productCheckbox" type="checkbox" name="prod_select"  id="product_two" value="71.95"> Product 2
+                    </td>
+
+                    <td style="border-right: 1px solid #bbbbbb;">
+                        <input class = "productCheckbox" type="checkbox" name="prod_select"  id="product_three" value="101.95"> Product 3
+                    </td>
+
+                    <td>
+                        <input class = "productCheckbox" type="checkbox" name="prod_select"  id="product_four" value="391.95"> Product 4
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="border-top: 1px solid #bbbbbb;">
+                        <h2>Total: </h2>
+                    </th>
+                </tr>
+            </table>
+    </fieldset>
+
+        <fieldset>
+            <label for="fName">First Name: </label>
+            <input type="text" id="fName">
+
+            <label for="lName">Last Name: </label>
+            <input type="text" id="lName">
+        </fieldset>
+
+        <fieldset>
+            <label for="a_line_1">Address Line 1: </label>
+            <input type="text" id="a_line_1">
+
+            <label for="a_city">City:</label>
+            <input type="text" id="a_city">
+
+            <label for="a_state">State:</label>
+            <input type="text" id="a_state">
+            <label for="zip">Zip: </label>
+            <input type="number" id="zip">
+
+            <label for="telephone">Telephone Number:</label>
+            <input type="text" id="telephone">
+        </fieldset>
+
+        <fieldset>
+            <input type="radio" name="credit_card" value="Visa" />Visa <br>
+            <input type="radio" name="credit_card" value="MasterCard" />MasterCard <br>
+            <input type="radio" name="credit_card" value="Amex" />American Express <br>
+
+            <label for="cc_num">Credit Card Number: </label>
+            <input type="number" id="cc_num">
+
+            <label for="cc_expiration">Credit Card Expiration: </label>
+            <input type="date" id="cc_expiration">
+        </fieldset>
+        <br>
+        <br>
+
+        <input type="reset" id="reset">
+        <input type="submit" id="submit">
+    </form>
+    <h1 id = "answer"></h1>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+html {
+
+    background: white;
+    font-family: Roboto;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+}
+
+.header-container {
+
+    background-color:#e5e5e5;
+    text-align:center;
+    position: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid black;
+
+}
+
+h1 {
+
+    padding: 30px;
+    position: center;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+
+    padding: 10px;
+    position: center;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+
+    margin-top: 20px;
+}
+
+nav li {
+
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li:hover {
+
+    background: #333333;
+
+}
+
+nav ul {
+
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: black;
+    list-style-type: none;
+    font-family: Oswald;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+
+}
+
+nav li a {
+
+    text-align: center;
+    display: block;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 13px;
+    padding-right: 13px;
+    text-decoration: none;
+}
+
+
+
+button {
+
+    border: solid 1px #bbbbbb;
+    border-radius: 3px;
+    background: none;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 20px;
+    width: auto;
+    height: 40px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table tr {
+
+    height: 60px;
+}
+
+table td {
+
+    width: 200px;
+    padding: 3%;
+}
+
+
+.product-container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100px;
+}
+.product-box{
+    height:10px;
+    width: 25vw;
+    background-color: pink;
+}
+
+
+
+.container {
+
+    width: 100%;
+    length: auto;
+    margin: 0%;
+}
+
+.button-holder {
+
+    text-align: center;
+}
+
+.button-holder button:hover {
+
+    border: solid 2px #111111;
+    font-weight: normal;
+}

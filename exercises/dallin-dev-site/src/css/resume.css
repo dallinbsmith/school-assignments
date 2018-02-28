@@ -1,0 +1,224 @@
+.headline-container{
+    height: 225px;
+    width: 100vw;
+    position: relative;
+
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 38%;
+    position: relative;
+    margin-left: 3%;
+}
+@media (max-width: 800px) {
+    .skills-container{
+        width: 85%;
+        margin-left: 0%;
+        left: 50%;
+        top: -100px;
+        position: relative;
+        transform: translate(-50%);
+        order: 2;
+    }
+}
+
+.jobs-container{
+    width: 54%;
+    padding-bottom: 25px;
+    margin-left: 5%;
+    position: relative;
+}
+@media (max-width: 800px) {
+    .jobs-container{
+        width: 100%;
+        margin-left: 0%;
+        left: 50%;
+        top: -100px;
+        position: relative;
+        transform: translate(-50%);
+        order: 1;
+    }
+}
+
+.name-hr{
+    height: 4px;
+    width: 9%;
+    background-color: #000;
+}
+
+.name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .name-container{
+        position: relative;
+        top: -100px;
+    }
+}
+
+.name-icon-container{
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 800px) and (max-width: 991px) {
+    .main-body{
+        top: -100px;
+    }
+}
+@media (max-width: 800px) {
+    .main-body{
+        flex-direction: column;
+    }
+}
+
+.spacer-container{
+    height: 150px;
+    width: 100vw;
+    position: relative;
+}
+
+.inner-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px 25px 50px;
+}
+
+.my-name{
+    color: #be1e2d;
+    font-size: 44px;
+    font-weight: 700;
+    position: relative;
+    margin: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.education{
+    width: 100%;
+}
+
+.name-icon-container{
+    height: 60px;
+    position: relative;
+}
+
+.skills-col{
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.skills-row{
+    width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    line-height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.title-row{
+    width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    line-height: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.plus-icon{
+    background: url("../main/assets/plus-empty-icon.png");
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+    left: -10px;
+    position: relative;
+    vertical-align: text-top;
+}
+
+.resume-header{
+    color: #be1e2d;
+}
+.resume-sect-title{
+    font-family: 'Pavanam', sans-serif;
+    font-size: 18px;
+    line-height: 10%;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+.red-heading{
+    color: #be1e2d;
+    font-size: 18px;
+    line-height: 10%;
+}
+
+.byu{
+    margin-top: 40px;
+}
+
+.degree{
+    margin-top: -10px;
+}
+
+.resumels{
+    margin-left: 13px;
+}
+.resumers{
+    margin-right: 14px;
+}
+
+.resume-paragraph{
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.rcircles{
+    margin-right: 14px;
+}
+
+.four-circles{
+    background: url("../main/assets/circles/four-circles.png");
+    background-size: cover;
+    background-repeat: none;
+    width: 130px;
+    height: 12px;
+}
+.five-circles{
+    background: url("../main/assets/circles/five-circles.png");
+    background-size: cover;
+    background-repeat: none;
+    width: 130px;
+    height: 12px;
+}
+.six-circles{
+    background: url("../main/assets/circles/six-circles.png");
+    background-size: cover;
+    background-repeat: none;
+    width: 130px;
+    height: 12px;
+}
+.seven-circles{
+    background: url("../main/assets/circles/seven-circles.png");
+    background-size: cover;
+    background-repeat: none;
+    width: 130px;
+    height: 12px;
+}

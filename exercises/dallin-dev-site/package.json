@@ -1,0 +1,30 @@
+{
+  "name": "dallin-site",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "emailjs-com": "^1.5.14",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.11.0",
+    "nodemailer": "^4.4.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-connect-form": "^0.6.1",
+    "react-dom": "^16.2.0",
+    "react-modal": "^3.1.10",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.17",
+    "react-scroll-to-component": "^1.0.2",
+    "react-typekit": "^1.1.0",
+    "react-youtube": "^7.5.0",
+    "react-youtube-player": "^2.0.1",
+    "sendgrid": "^5.2.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

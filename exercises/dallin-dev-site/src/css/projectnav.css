@@ -1,0 +1,309 @@
+.project-nav-container:hover{
+    cursor: pointer;
+}
+
+.project-nav-row{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 475px) {
+    .project-nav-row{
+        flex-direction: column;
+    }
+}
+
+.project-nav-block{
+    width: 50vw;
+    height:29vw;
+    display: block;
+    position: relative;
+    border: 2px solid #000;
+    background-color: red;
+}
+
+@media (max-width: 475px) {
+    .project-nav-block{
+        width: 100vw;
+        height: 40vw;
+    }
+}
+
+.project-nav-bl{
+    color: red;
+    font-size: 300px;
+}
+
+.testingstuff{
+    color: red;
+    font-size: 300px;
+}
+.frontend-icon{
+    background: url("../main/assets/project-nav-icons/frontend-icon.png");
+    background-size: cover;
+}
+
+.frontend-container:hover > .frontend-h2{
+    color: #be1e2d;
+    right: -35vw;
+    opacity: 1;
+    transition: opacity .7s, right .5s;
+    transition-timing-function: linear;
+}
+@media (min-width: 1350px) {
+    .frontend-container:hover > .frontend-h2{
+        right: -39vw;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .frontend-container:hover > .frontend-h2{
+        right: -31vw;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .frontend-container:hover > .frontend-h2{
+        right: -22vw;
+    }
+}
+@media (max-width: 475px) {
+    .frontend-container:hover > .frontend-h2{
+        right: 0vw;
+        transition: none;
+    }
+}
+
+.frontend-container:hover > .frontend-icon{
+    background: url("../main/assets/project-nav-icons/frontend-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.fullstack-icon{
+    background: url("../main/assets/project-nav-icons/fullstack-icon.png");
+    background-size: cover;
+}
+
+.fullstack-container:hover > .fullstack-h2{
+    color: #be1e2d;
+    right: 7vw;
+    opacity: 1;
+    transition: opacity .7s, right .2s;
+    transition-timing-function: linear;
+}
+@media (min-width: 1350px) {
+    .fullstack-container:hover > .fullstack-h2{
+        right: 3vw;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .fullstack-container:hover > .fullstack-h2{
+        right: 9vw;
+    }
+}
+@media (max-width: 475px) {
+    .fullstack-container:hover > .fullstack-h2{
+        right: 0vw;
+        transition: none;
+    }
+}
+
+.fullstack-container:hover > .fullstack-icon{
+    background: url("../main/assets/project-nav-icons/fullstack-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.ux-icon{
+    background: url("../main/assets/project-nav-icons/ux-icon.png");
+    background-size: cover;
+}
+
+.ux-container:hover > .ux-h2{
+    color: #be1e2d;
+    right: -35vw;
+    opacity: 1;
+    transition: opacity .7s, right .5s;
+    transition-timing-function: linear;
+}
+@media (min-width: 1350px) {
+    .ux-container:hover > .ux-h2{
+        right: -39vw;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .ux-container:hover > .ux-h2{
+        right: -31vw;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .ux-container:hover > .ux-h2{
+        right: -22vw;
+    }
+}
+@media (max-width: 475px) {
+    .ux-container:hover > .ux-h2{
+        right: 0vw;
+        transition: none;
+    }
+}
+
+.ux-container:hover > .ux-icon{
+    background: url("../main/assets/project-nav-icons/ux-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.marketing-icon{
+    background: url("../main/assets/project-nav-icons/marketing-icon.png");
+    background-size: cover;
+}
+
+.marketing-container:hover > .marketing-h2{
+    right: 7vw;
+    opacity: 1;
+    transition: opacity .7s, right .2s;
+    transition-timing-function: linear;
+}
+@media (min-width: 1350px) {
+    .marketing-container:hover > .marketing-h2{
+        right: 3vw;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .marketing-container:hover > .marketing-h2{
+        right: 9vw;
+    }
+}
+@media (max-width: 475px) {
+    .marketing-container:hover > .marketing-h2{
+        right: 0vw;
+        transition: none;
+    }
+}
+
+.marketing-container:hover > .marketing-icon{
+    background: url("../main/assets/project-nav-icons/marketing-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+.marketing-icon:hover{
+    background: url("../main/assets/project-nav-icons/marketing-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.production-icon{
+    background: url("../main/assets/project-nav-icons/production-icon.png");
+    background-size: cover;
+}
+
+.production-container:hover > .production-h2{
+    right: -35vw;
+    opacity: 1;
+    transition: opacity .7s, right .5s;
+    transition-timing-function: linear;
+}
+@media (min-width: 1350px) {
+    .production-container:hover > .production-h2{
+        right: -39vw;
+    }
+}
+@media (min-width: 787px) and (max-width: 991px) {
+    .production-container:hover > .production-h2{
+        right: -31vw;
+    }
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .production-container:hover > .production-h2{
+        right: -22vw;
+    }
+}
+@media (max-width: 475px) {
+    .production-container:hover > .production-h2{
+        right: 0vw;
+        transition: none;
+    }
+}
+
+.production-container:hover > .production-icon{
+    background: url("../main/assets/project-nav-icons/production-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.design-icon{
+    background: url("../main/assets/project-nav-icons/design-icon.png");
+    background-size: cover;
+}
+
+.design-container:hover > .design-h2{
+    right: 7vw;
+    opacity: 1;
+    transition: opacity .7s, right .2s;
+    transition-timing-function: linear;
+}
+@media (min-width: 1350px) {
+    .design-container:hover > .design-h2{
+        right: 3vw;
+    }
+}
+@media (min-width: 475px) and (max-width: 991px) {
+    .design-container:hover > .design-h2{
+        right: 9vw;
+    }
+}
+@media (max-width: 475px) {
+    .design-container:hover > .design-h2{
+        right: 0vw;
+        transition: none;
+    }
+}
+
+.design-container:hover > .design-icon{
+    background: url("../main/assets/project-nav-icons/design-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+.design-icon:hover{
+    background: url("../main/assets/project-nav-icons/design-icon-1.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.frontend-h2, .ux-h2, .production-h2{
+    top: -50px;
+    right: -55vw;
+    float: left;
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .frontend-h2, .ux-h2, .production-h2{
+        top: -50px;
+        right: -55vw;
+        float: left;
+    }
+}
+@media (max-width: 475px) {
+    .frontend-h2, .ux-h2, .production-h2{
+        float: auto;
+        text-align: center;
+        right: auto;
+        top: 0px;
+    }
+}
+.fullstack-h2, .marketing-h2, .design-h2{
+    top: -50px;
+    right: 13vw;
+}
+@media (min-width: 475px) and (max-width: 787px) {
+    .fullstack-h2, .marketing-h2, .design-h2{
+        top: -50px;
+        right: 13vw;
+    }
+}
+@media (max-width: 475px) {
+    .fullstack-h2, .marketing-h2, .design-h2{
+        float: auto;
+        text-align: center;
+        right: auto;
+        top: 0px;
+    }
+}
