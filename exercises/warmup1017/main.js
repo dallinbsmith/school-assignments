@@ -29,4 +29,4 @@ function some(arr, f){
 
 
 
-some([2, 4, 6I], addfunction)
+some([2, 4], addfunction)

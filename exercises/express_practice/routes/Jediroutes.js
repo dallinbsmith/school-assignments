@@ -30,7 +30,6 @@ jediRoutes.delete("/bounties/:id", (req, res) => {
     return bounty._id !== req.params.id
   })
   res.send({
-    bounties;
   })
 })
 

@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F9F9F9;
+}
+
+.select {
+    border-radius: none !important;
+}

@@ -1,36 +1,19 @@
-function avoidObstacles(inputArray) {
-    let sorted = inputArray.sort(function(a, b) {return a - b;});
-    const missing = [];
-    let answer = 0
-    let count = 0
-    let runAgain = true
-    for(var i=1;i<sorted[sorted.length -1];i++) {
-        if(sorted.indexOf(i) == -1){
-        missing.push(i);
-        }
-    }
-    function ridTheMissing(inputArr, num){
-         for(var i=1;i<sorted[sorted.length -1];i++) {
-            if (inputArr[i] % missing[count] === 0){
-                count++
-                break
-            }else if(inputArr[i] === sorted[sorted.length -1] && inputArr[i] % missing[count] !== 0) {
-                runAgain = false     
-            }
-         }
-            if (runAgain === true){
-                ridTheMissing(inputArr, count) 
-            } else{
-            answer = num; 
-         }
-    }
-    ridTheMissing(inputArray, count);
-    if (missing[answer] === undefined){
-        return inputArray[inputArray.length - 1] + 1
-    }else{
-    return missing[answer]
-    }
-}
+<input type="search"></input>
+            <h1>{(this.state.loading === true)?"Loading..." : null}</h1>
+            <div>{(this.state.loading === false)?
+               this.state.newData.map(entry => (
+              <div className="station" key={entry.API}>{entry.API}</div>
+                        )) : null
+                    }
+            </div>
 
-    
-console.log(avoidObstacles([2, 3])) 
+
+
+
+      <ul className="list-group">
+      {
+        this.props.items.map(function(item) {
+          return <li className="list-group-item" data-category={item} key={item}>{item}</li>
+        })
+       }
+      </ul>
