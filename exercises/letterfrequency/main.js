@@ -1,79 +1,26 @@
-var readlineSync = require('readline-sync');
-var input = readlineSync.question("Put in a dumb phrase so I can count the letters.");
-//var newArray = [];
-//var otherArray = [];
-//var answerArray = [];
-//var objAnswer = {};
-//
-//
-//function numberLetters(str) {
-//    for (var i = 0; i < str.length; i++) {
-//        if (newArray.indexOf(str[i]) === -1) {;
-//            objAnswer.thing = input[i];
-//            newArray.push(input[i])
-//             answerArray.push(input[i]);
-//        } else {
-//            otherArray.push(input[i]);
-//
-//            }
-//        }
-//
-//    console.log(newArray);
-//    console.log(otherArray);
-//}
-//
-//numberLetters(input);
-//
-//function comparison(arr, arry) {
-//    for (var i = 0; i < arr.length; i++) {
-//        for (var j = 0; j < arry.length; j++) {
-//            if (arr[i] === arry[j]) {
-//                answerArray.push(arr[i]);
-//            }
-//        }
-//    }
-//}
-//
-//comparison(input, otherArray);
-//console.log(answerArray);
-//console.log(objAnswer);
-//
-//var inputArray = [];
-//var splitput = input.split("");
-//
-//var answer = splitput.forEach(function (letter) {
-//if (splitput[letter] === undefined) {
-//    splitput[letter] = 1;
-//} else {
-//    splitput[letter]++;
-//}
-//});
-//
-//
-//
-//var answer = splitput.reduce(function(runningTotal, letter){
-//      splitput[letter] ;
-//    }else{
-//        runningTotal.letter++;
-//    }
-//},{});
-//
-//console.log(answer);
-
-
-
-/////*********BOUT DAMN TIME!!!!!!*************
-
-var splitput = input.split("");
-
-var answer = splitput.reduce(function(runningtotal, obj){
-    if (runningtotal[obj] !== undefined){
-        runningtotal[obj]++ ;
-    }else {
-        runningtotal[obj] = 1;
+function countingValleys(bribes, len1, arr1, len2, arr2) {
+    arrFin = []
+    for(let i = 1; i <= len1; i++){
+        arrFin.push(i)
     }
-    return runningtotal;
-},{}); 
-    
+    function array_move(arr, old_index, new_index) {
+        if (new_index >= arr.length) {
+            var k = new_index - arr.length + 1;
+            while (k--) {
+                arr.push(undefined);
+            }
+        }
+        arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+        console.log(arr)
+        return arr; // for testing
+    };
+        for (let i = 0; i <= 2; i++){
+        while (arrFin[i] !== arr1[i]) {
+            console.log(arrFin)
+            console.log(arr1)
+            array_move(arrFin, arrFin[i-1], arrFin[i])
+        }    
+    }
+}
 
-console.log(answer);
+console.log(countingValleys(2, 5, [2,1,5,3,4], 5, [2,5,1,3,4]))
