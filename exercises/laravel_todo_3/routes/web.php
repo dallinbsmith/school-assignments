@@ -50,4 +50,14 @@ Route::group(['prefix' => 'homepage'], function() {
         'uses' => 'TodoController@postHomeUpdate',
         'as' => 'homepage.update'
     ]);
+
+    Route::get('delete/{id}', [
+        'uses' => 'TodoController@getHomeDelete',
+        'as' => 'homepage.delete'
+    ]);
+
+    Route::post('deletenow/{id}', [
+        'uses' => 'TodoController@postHomeDeleteUpdate',
+        'as' => 'homepage.deleteupdate'
+    ]);
 });

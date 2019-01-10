@@ -32,8 +32,15 @@ class Post
 
     public function editPost($session, $id, $title, $content)
     {
-        $posts = $session->get('posts');
+         $posts = $session->get('posts');
         $posts[$id] = ['title' => $title, 'content' => $content];
+        $session->put('posts', $posts);
+    }
+
+    public function deletePost($session, $id)
+    {
+         $posts = $session->get('posts');
+        unset($posts[$id]);
         $session->put('posts', $posts);
     }
 
@@ -41,12 +48,7 @@ class Post
     {
         $posts = [
             [
-                'title' => 'Learning Laravel',
-                'content' => 'This blog post will get you right on track with Laravel!'
-            ],
-            [
-                'title' => 'Something else',
-                'content' => 'Some other content'
+                'title' => 'To Start Click New Todo',
             ]
         ];
         $session->put('posts', $posts);

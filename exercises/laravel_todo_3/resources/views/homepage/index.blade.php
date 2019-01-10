@@ -21,6 +21,8 @@
             <p>{{ $post['content'] }}!</p>
             <p><a href="{{ route('homepage.single', ['id' => array_search($post, $posts)]) }}">Read more...</a></p>
             <p><a href="{{ route('homepage.edit', ['id' => array_search($post, $posts)]) }}">Edit</a></p>
+            <p><a href="{{ route('homepage.delete', ['id' => array_search($post, $posts)]) }}">Delete</a></p>
+
         </div>
     </div>
     <hr>

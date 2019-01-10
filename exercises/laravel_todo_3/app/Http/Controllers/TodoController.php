@@ -43,12 +43,22 @@ class TodoController extends Controller
         return view('homepage.edit', ['post' => $post, 'postId' => $id]);
     }
 
+    public function getHomeDelete(Store $session, $id)
+    {
+        $post = new Post();
+        $post = $post->getPost($session, $id);
+        return view('homepage.delete', ['post' => $post, 'postId' => $id]);
+    }
+
+    public function postHomeDeleteUpdate(Store $session, $id)
+    {
+        $post = new Post();
+        $post = $post->deletePost($session, $id);
+        return redirect()->route('homepage.index');
+    }
+
     public function postHomeCreate(Store $session, Request $request)
     {
-        $this->validate($request, [
-            'title' => 'required|min:5',
-            'content' => 'required|min:10'
-        ]);
         $post = new Post();
         $post->addPost($session, $request->input('title'), $request->input('content'));
         return redirect()->route('homepage.index')->with('info', 'Post created, Title is: ' . $request->input('title'));
@@ -56,10 +66,6 @@ class TodoController extends Controller
 
     public function postHomeUpdate(Store $session, Request $request)
     {
-        $this->validate($request, [
-            'title' => 'required|min:5',
-            'content' => 'required|min:10'
-        ]);
         $post = new Post();
         $post->editPost($session, $request->input('id'), $request->input('title'), $request->input('content'));
         return redirect()->route('homepage.index')->with('info', 'Post edited, new Title is: ' . $request->input('title'));
