@@ -1,10 +1,10 @@
-@extends('layouts.admin')
+@extends('layouts.master')
 
 @section('content')
     @include('partials.errors')
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route('admin.update') }}" method="post">
+            <form action="{{ route('homepage.update') }}" method="post">
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input
