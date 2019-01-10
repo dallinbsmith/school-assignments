@@ -17,7 +17,7 @@ class TodoController extends Controller
         return view('homepage.index', ['posts' => $posts]);
     }
 
-    public function getAdminIndex(Store $session)
+    public function getHomeIndex(Store $session)
     {
         $post = new Post();
         $posts = $post->getPosts($session);
@@ -31,19 +31,19 @@ class TodoController extends Controller
         return view('homepage.single', ['post' => $post]);
     }
 
-    public function getAdminCreate()
+    public function getHomeCreate()
     {
         return view('homepage.create');
     }
 
-    public function getAdminEdit(Store $session, $id)
+    public function getHomeEdit(Store $session, $id)
     {
         $post = new Post();
         $post = $post->getPost($session, $id);
         return view('homepage.edit', ['post' => $post, 'postId' => $id]);
     }
 
-    public function postAdminCreate(Store $session, Request $request)
+    public function postHomeCreate(Store $session, Request $request)
     {
         $this->validate($request, [
             'title' => 'required|min:5',
@@ -54,7 +54,7 @@ class TodoController extends Controller
         return redirect()->route('homepage.index')->with('info', 'Post created, Title is: ' . $request->input('title'));
     }
 
-    public function postAdminUpdate(Store $session, Request $request)
+    public function postHomeUpdate(Store $session, Request $request)
     {
         $this->validate($request, [
             'title' => 'required|min:5',

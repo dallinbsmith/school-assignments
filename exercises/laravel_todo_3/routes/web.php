@@ -27,27 +27,27 @@ Route::get('about', function () {
 
 Route::group(['prefix' => 'homepage'], function() {
     Route::get('', [
-        'uses' => 'TodoController@getAdminIndex',
+        'uses' => 'TodoController@getHomeIndex',
         'as' => 'homepage.index'
     ]);
 
     Route::get('create', [
-        'uses' => 'TodoController@getAdminCreate',
+        'uses' => 'TodoController@getHomeCreate',
         'as' => 'homepage.create'
     ]);
 
     Route::post('create', [
-        'uses' => 'TodoController@postAdminCreate',
+        'uses' => 'TodoController@postHomeCreate',
         'as' => 'homepage.create'
     ]);
 
     Route::get('edit/{id}', [
-        'uses' => 'TodoController@getAdminEdit',
+        'uses' => 'TodoController@getHomeEdit',
         'as' => 'homepage.edit'
     ]);
 
     Route::post('edit', [
-        'uses' => 'TodoController@postAdminUpdate',
+        'uses' => 'TodoController@postHomeUpdate',
         'as' => 'homepage.update'
     ]);
 });
