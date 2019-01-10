@@ -17,7 +17,7 @@ Route::get('/', [
 ]);
 
 Route::get('post/{id}', [
-    'uses' => 'TodoController@getPost',
+    'uses' => 'TodoController@getTodo',
     'as' => 'homepage.single'
 ]);
 

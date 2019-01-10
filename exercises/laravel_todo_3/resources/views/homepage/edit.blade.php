@@ -24,7 +24,7 @@
                             value="{{ $post['content'] }}">
                 </div>
                 {{ csrf_field() }}
-                <input type="hidden" name="id" value="{{ $postId }}">
+                <input type="hidden" name="id" value="{{ $todoId }}">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

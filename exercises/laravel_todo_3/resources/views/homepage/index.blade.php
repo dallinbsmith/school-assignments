@@ -10,7 +10,7 @@
     @endif
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ route('homepage.create') }}" class="btn btn-success">New Post</a>
+            <a href="{{ route('homepage.create') }}" class="btn btn-success">New Todo</a>
         </div>
     </div>
     <hr>

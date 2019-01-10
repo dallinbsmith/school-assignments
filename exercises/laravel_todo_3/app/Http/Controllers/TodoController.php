@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
+use App\Todo;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -12,22 +12,22 @@ class TodoController extends Controller
 {
     public function getIndex(Store $session)
     {
-        $post = new Post();
-        $posts = $post->getPosts($session);
+        $post = new Todo();
+        $posts = $post->getTodos($session);
         return view('homepage.index', ['posts' => $posts]);
     }
 
     public function getHomeIndex(Store $session)
     {
-        $post = new Post();
-        $posts = $post->getPosts($session);
+        $post = new Todo();
+        $posts = $post->getTodos($session);
         return view('homepage.index', ['posts' => $posts]);
     }
 
-    public function getPost(Store $session, $id)
+    public function getTodo(Store $session, $id)
     {
-        $post = new Post();
-        $post = $post->getPost($session, $id);
+        $post = new Todo();
+        $post = $post->getTodo($session, $id);
         return view('homepage.single', ['post' => $post]);
     }
 
@@ -38,36 +38,36 @@ class TodoController extends Controller
 
     public function getHomeEdit(Store $session, $id)
     {
-        $post = new Post();
-        $post = $post->getPost($session, $id);
-        return view('homepage.edit', ['post' => $post, 'postId' => $id]);
+        $post = new Todo();
+        $post = $post->getTodo($session, $id);
+        return view('homepage.edit', ['post' => $post, 'todoId' => $id]);
     }
 
     public function getHomeDelete(Store $session, $id)
     {
-        $post = new Post();
-        $post = $post->getPost($session, $id);
-        return view('homepage.delete', ['post' => $post, 'postId' => $id]);
+        $post = new Todo();
+        $post = $post->getTodo($session, $id);
+        return view('homepage.delete', ['post' => $post, 'todoId' => $id]);
     }
 
     public function postHomeDeleteUpdate(Store $session, $id)
     {
-        $post = new Post();
-        $post = $post->deletePost($session, $id);
+        $post = new Todo();
+        $post = $post->deleteTodo($session, $id);
         return redirect()->route('homepage.index');
     }
 
     public function postHomeCreate(Store $session, Request $request)
     {
-        $post = new Post();
-        $post->addPost($session, $request->input('title'), $request->input('content'));
-        return redirect()->route('homepage.index')->with('info', 'Post created, Title is: ' . $request->input('title'));
+        $post = new Todo();
+        $post->addTodo($session, $request->input('title'), $request->input('content'));
+        return redirect()->route('homepage.index')->with('info', 'Todo created, Title is: ' . $request->input('title'));
     }
 
     public function postHomeUpdate(Store $session, Request $request)
     {
-        $post = new Post();
-        $post->editPost($session, $request->input('id'), $request->input('title'), $request->input('content'));
-        return redirect()->route('homepage.index')->with('info', 'Post edited, new Title is: ' . $request->input('title'));
+        $post = new Todo();
+        $post->editTodo($session, $request->input('id'), $request->input('title'), $request->input('content'));
+        return redirect()->route('homepage.index')->with('info', 'Todo edited, new Title is: ' . $request->input('title'));
     }
 }
