@@ -4,7 +4,7 @@
     @include('partials.errors')
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route('homepage.deletenow', $todoId)}}" method="post">
+            <form action="{{ route('homepage.deletenow', $postId)}}" method="post">
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input
@@ -21,10 +21,10 @@
                             class="form-control"
                             id="content"
                             name="content"
-                            value="{{ $todoId }}">
+                            value="{{ $postId }}">
                 </div>
                 {{ csrf_field() }}
-                <input type="hidden" name="id" value="{{ $todoId }}">
+                <input type="hidden" name="id" value="{{ $postId }}">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

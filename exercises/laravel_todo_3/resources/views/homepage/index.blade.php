@@ -9,14 +9,9 @@
             </div>
         </div>
         @endif
-        <div class="row">
-            <div class="col-md-12">
-                <a href="{{ route('homepage.create') }}" class="btn btn-success">New Post</a>
-            </div>
-        </div>
-        <div class = "text-center auto">    
+        <div class = "text-center auto mt-5">    
             @foreach($posts as $post)
-                <div class='col-md-5 d-inline-block m-4 pt-3 rounded shadow note-card'>
+                <div class='col-md-5 d-inline-block m-3 pt-3 rounded shadow note-card'>
                     <div class = "row">
                         <div class ="col-2 pt-2 pl-3">
                             <img src="https://img.icons8.com/ios/40/000000/document.png"></img>
@@ -40,10 +35,16 @@
                                     </p>
                                 </div>
                        </div>
-                    {{-- <div class ="row bg-dark rounded-bottom p-3"></div> --}}
                     </div> 
                 </div>   
              @endforeach
+             <div class="row mt-5 text-left">
+                    <div class="col-md-12">
+                        <a href="{{ route('homepage.create') }}">
+                            <img src="https://img.icons8.com/ios/40/000000/plus.png"></img>
+                        </a>
+                    </div>
+                </div>
         </div>     
     </div>    
 @endsection

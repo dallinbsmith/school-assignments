@@ -7,7 +7,7 @@ class Todo
     public function getTodos($session)
     {
         if (!$session->has('posts')) {
-            $this->createDummyData($session);
+            $this->firstLogon($session);
         }
         return $session->get('posts');
     }
@@ -15,7 +15,7 @@ class Todo
     public function getTodo($session, $id)
     {
         if (!$session->has('posts')) {
-            $this->createDummyData();
+            $this->firstLogon();
         }
         return $session->get('posts')[$id];
     }
@@ -23,34 +23,35 @@ class Todo
     public function addTodo($session, $title, $content)
     {
         if (!$session->has('posts')) {
-            $this->createDummyData();
+            $this->firstLogon();
         }
-        $todos = $session->get('posts');
-        array_push($todos, ['title' => $title, 'content' => $content]);
-        $session->put('posts', $todos);
+        $posts = $session->get('posts');
+        array_push($posts, ['title' => $title, 'content' => $content]);
+        $session->put('posts', $posts);
     }
 
     public function editTodo($session, $id, $title, $content)
     {
-         $todos = $session->get('posts');
-        $todos[$id] = ['title' => $title, 'content' => $content];
-        $session->put('posts', $todos);
+         $posts = $session->get('posts');
+        $posts[$id] = ['title' => $title, 'content' => $content];
+        $session->put('posts', $posts);
     }
 
     public function deleteTodo($session, $id)
     {
-         $todos = $session->get('posts');
-        unset($todos[$id]);
-        $session->put('posts', $todos);
+         $posts = $session->get('posts');
+        unset($posts[$id]);
+        $session->put('posts', $posts);
     }
 
-    private function createDummyData($session)
+    private function firstLogon($session)
     {
-        $todos = [
+        $posts = [
             [
-                'title' => 'To Start Click New Todo',
+                'title' => 'Enter your first Todo',
+                'content' => 'Enter your first Todo'
             ]
         ];
-        $session->put('posts', $todos);
+        $session->put('posts', $posts);
     }
 }
