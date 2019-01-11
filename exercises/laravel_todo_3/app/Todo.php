@@ -25,32 +25,32 @@ class Todo
         if (!$session->has('posts')) {
             $this->createDummyData();
         }
-        $posts = $session->get('posts');
-        array_push($posts, ['title' => $title, 'content' => $content]);
-        $session->put('posts', $posts);
+        $todos = $session->get('posts');
+        array_push($todos, ['title' => $title, 'content' => $content]);
+        $session->put('posts', $todos);
     }
 
     public function editTodo($session, $id, $title, $content)
     {
-         $posts = $session->get('posts');
-        $posts[$id] = ['title' => $title, 'content' => $content];
-        $session->put('posts', $posts);
+         $todos = $session->get('posts');
+        $todos[$id] = ['title' => $title, 'content' => $content];
+        $session->put('posts', $todos);
     }
 
     public function deleteTodo($session, $id)
     {
-         $posts = $session->get('posts');
-        unset($posts[$id]);
-        $session->put('posts', $posts);
+         $todos = $session->get('posts');
+        unset($todos[$id]);
+        $session->put('posts', $todos);
     }
 
     private function createDummyData($session)
     {
-        $posts = [
+        $todos = [
             [
                 'title' => 'To Start Click New Todo',
             ]
         ];
-        $session->put('posts', $posts);
+        $session->put('posts', $todos);
     }
 }

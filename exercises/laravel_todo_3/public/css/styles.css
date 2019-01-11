@@ -1,9 +1,32 @@
-.quote {
-    font: 400 72px "Arizonia", Helvetica, sans-serif;
-    color: #F4645F;
-    text-align: center;
-}
+body{
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #b5e2ed;
+  background: -moz-linear-gradient(90deg,  #b5e2ed 10%, #173e71 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%,#b5e2ed), color-stop(100%,#173e71));
+  background: -webkit-linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  background: -o-linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  background: -ms-linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  background: linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5e2ed', endColorstr='#173e71',GradientType=1 );
+  }
 
 .post-title {
-    color: #F4645F;
+    color: rgb(33, 95, 110);
 }
+
+.note-card{
+    background-color: #fafafa;
+    margin-top: 30px;
+    border-color: black;
+    word-wrap: break-word
+}
+
+.note-card-button{
+    color: #173d60;
+    text-decoration: none;
+}
+
