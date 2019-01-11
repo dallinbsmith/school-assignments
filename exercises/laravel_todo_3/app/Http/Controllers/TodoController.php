@@ -54,14 +54,14 @@ class TodoController extends Controller
     {
         $todo = new Todo();
         $todo = $todo->getTodo($session, $id);
-        return view('homepage.edit', ['post' => $todo, 'postId' => $id]);
+        return view('homepage.edit', ['post' => $todo, 'todoId' => $id]);
     }
 
     public function getHomeDelete(Store $session, $id)
     {
         $todo = new Todo();
         $todo = $todo->getTodo($session, $id);
-        return view('homepage.delete', ['post' => $todo, 'postId' => $id]);
+        return view('homepage.delete', ['post' => $todo, 'todoId' => $id]);
     }
 
     public function postHomeDeleteNow(Store $session, $id)

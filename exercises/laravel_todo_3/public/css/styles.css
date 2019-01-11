@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:700|Lato:300" rel="stylesheet');
+
 body{
     height: 100%;
     -webkit-background-size: cover;
@@ -15,14 +17,23 @@ body{
   }
 
 .post-title {
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
     color: rgb(33, 95, 110);
+}
+
+.post-content{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: rgb(84, 85, 85);
 }
 
 .note-card{
     background-color: #fafafa;
     margin-top: 30px;
     border-color: black;
-    word-wrap: break-word
+    word-wrap: break-word;
+    border-left: 12px solid #173d60;
 }
 
 .note-card-button{
@@ -30,3 +41,7 @@ body{
     text-decoration: none;
 }
 
+.edit-button{
+    position: relative;
+    top: 3px;
+}
