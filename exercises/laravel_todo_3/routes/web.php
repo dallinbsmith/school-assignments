@@ -21,10 +21,6 @@ Route::get('post/{id}', [
     'as' => 'homepage.single'
 ]);
 
-Route::get('about', function () {
-    return view('other.about');
-})->name('other.about');
-
 Route::group(['prefix' => 'homepage'], function() {
     Route::get('', [
         'uses' => 'TodoController@getHomeIndex',
@@ -57,7 +53,7 @@ Route::group(['prefix' => 'homepage'], function() {
     ]);
 
     Route::post('deletenow/{id}', [
-        'uses' => 'TodoController@postHomeDeleteUpdate',
-        'as' => 'homepage.deleteupdate'
+        'uses' => 'TodoController@postHomeDeleteNow',
+        'as' => 'homepage.deletenow'
     ]);
 });

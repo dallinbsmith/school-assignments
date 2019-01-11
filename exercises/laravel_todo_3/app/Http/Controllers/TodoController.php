@@ -36,6 +36,20 @@ class TodoController extends Controller
         return view('homepage.create');
     }
 
+    public function postHomeCreate(Store $session, Request $request)
+    {
+        $todo = new Todo();
+        $todo->addTodo($session, $request->input('title'), $request->input('content'));
+        return redirect()->route('homepage.index');
+    }
+
+    public function postHomeUpdate(Store $session, Request $request)
+    {
+        $todo = new Todo();
+        $todo->editTodo($session, $request->input('id'), $request->input('title'), $request->input('content'));
+        return redirect()->route('homepage.index');
+    }
+
     public function getHomeEdit(Store $session, $id)
     {
         $todo = new Todo();
@@ -50,24 +64,11 @@ class TodoController extends Controller
         return view('homepage.delete', ['post' => $todo, 'postId' => $id]);
     }
 
-    public function postHomeDeleteUpdate(Store $session, $id)
+    public function postHomeDeleteNow(Store $session, $id)
     {
         $todo = new Todo();
         $todo = $todo->deleteTodo($session, $id);
         return redirect()->route('homepage.index');
     }
 
-    public function postHomeCreate(Store $session, Request $request)
-    {
-        $todo = new Todo();
-        $todo->addTodo($session, $request->input('title'), $request->input('content'));
-        return redirect()->route('homepage.index')->with('info', 'Todo created, Title is: ' . $request->input('title'));
-    }
-
-    public function postHomeUpdate(Store $session, Request $request)
-    {
-        $todo = new Todo();
-        $todo->editTodo($session, $request->input('id'), $request->input('title'), $request->input('content'));
-        return redirect()->route('homepage.index')->with('info', 'Todo edited, new Title is: ' . $request->input('title'));
-    }
 }

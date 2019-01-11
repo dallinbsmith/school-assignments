@@ -4,7 +4,7 @@
     @include('partials.errors')
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route('homepage.deleteupdate', $postId)}}" method="post">
+            <form action="{{ route('homepage.deletenow', $postId)}}" method="post">
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input
