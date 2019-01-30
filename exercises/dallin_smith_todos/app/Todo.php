@@ -49,7 +49,7 @@ class Todo
         $todos = [
             [
                 'title' => 'Enter your first Todo',
-                'content' => 'Enter your first Todo',
+                'content' => 'Click on the plus button below. Or the "New Todo" button in the Navigation to get started!',
             ]
         ];
         $session->put('todos', $todos);

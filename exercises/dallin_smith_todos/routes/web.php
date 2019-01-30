@@ -16,7 +16,7 @@ Route::get('/', [
     'as' => 'homepage.index'
 ]);
 
-Route::get('post/{id}', [
+Route::get('todo/{id}', [
     'uses' => 'TodoController@getTodo',
     'as' => 'homepage.single'
 ]);
@@ -52,8 +52,8 @@ Route::group(['prefix' => 'homepage'], function() {
         'as' => 'homepage.delete'
     ]);
 
-    Route::post('deletenow/{id}', [
-        'uses' => 'TodoController@postHomeDeleteNow',
-        'as' => 'homepage.deletenow'
+    Route::post('destroy/{id}', [
+        'uses' => 'TodoController@postDestroy',
+        'as' => 'homepage.destroy'
     ]);
 });

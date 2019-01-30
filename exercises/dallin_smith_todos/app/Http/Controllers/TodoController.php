@@ -72,7 +72,7 @@ class TodoController extends Controller
         return view('homepage.delete', ['todo' => $todo, 'todoId' => $id]);
     }
 
-    public function postHomeDeleteNow(Store $session, $id)
+    public function postDestroy(Store $session, $id)
     {
         $todo = new Todo();
         $todo = $todo->deleteTodo($session, $id);

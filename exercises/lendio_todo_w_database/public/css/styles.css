@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:700|Lato:300" rel="stylesheet');
+
+body{
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #b5e2ed;
+  background: -moz-linear-gradient(90deg,  #b5e2ed 10%, #173e71 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(10%,#b5e2ed), color-stop(100%,#173e71));
+  background: -webkit-linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  background: -o-linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  background: -ms-linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  background: linear-gradient(90deg,  #b5e2ed 10%,#173e71 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5e2ed', endColorstr='#173e71',GradientType=1 );
+  }
+
+.navbar-main{
+    background-color: #09243d;
+}
+
+.new-todo-btn{
+    background-color: #cae7ea;
+}
+
+.todo-title {
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    color: rgb(33, 95, 110);
+}
+
+.todo-content{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: rgb(84, 85, 85);
+}
+
+.todo-content-height{
+    height: 80px;
+}
+
+.note-card{
+    background-color: #fafafa;
+    margin-top: 30px;
+    border-color: black;
+    word-wrap: break-word;
+    border-left: 12px solid #173d60;
+}
+
+.note-card-button{
+    color: #173d60;
+    text-decoration: none;
+}
+
+.edit-button{
+    position: relative;
+    top: 3px;
+}
+
+.form-button{
+    border: 2px solid #173d60;
+    background-color: #fafafa;
+    color: #173d60;
+    width: 120px;
+    height: 40px;
+}
+
+.form-button:hover{
+    background-color: #173d60;
+    border: 1px solid #173d60;
+}
+
+.form-control-content{
+    padding: 5px 5px; 
+    line-height: 26px;
+}
